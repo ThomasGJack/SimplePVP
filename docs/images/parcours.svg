@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#9aa0a6"/>
+    </marker>
+    <marker id="flecheO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ff6a13"/>
+    </marker>
+  </defs>
+  <rect width="960" height="320" rx="16" fill="#14171c"/>
+  <text x="24" y="36" font-size="15" font-weight="600" fill="#9aa0a6" letter-spacing="2">LE PARCOURS D'UN JOUEUR</text>
+
+  <!-- Étapes -->
+  <g font-size="13" fill="#c9cdd2" text-anchor="middle">
+    <rect x="20" y="60" width="160" height="110" rx="10" fill="#1f242b" stroke="#2f3640"/>
+    <text x="100" y="92" font-size="16" font-weight="700" fill="#f2f2f2">LOBBY</text>
+    <text x="100" y="120">Zone sûre</text>
+    <text x="100" y="140">Arsenal sans limite</text>
+
+    <rect x="210" y="60" width="160" height="110" rx="10" fill="#1f242b" stroke="#2f3640"/>
+    <text x="290" y="92" font-size="16" font-weight="700" fill="#f2f2f2">ORDINATEUR</text>
+    <text x="290" y="120">Déployer, voter,</text>
+    <text x="290" y="140">prendre un kit prêt</text>
+
+    <rect x="400" y="60" width="160" height="110" rx="10" fill="#1f242b" stroke="#2f3640"/>
+    <text x="480" y="92" font-size="16" font-weight="700" fill="#f2f2f2">VILLE</text>
+    <text x="480" y="120">Apparition loin</text>
+    <text x="480" y="140">de tout le monde</text>
+
+    <rect x="590" y="60" width="160" height="110" rx="10" fill="#2a1a10" stroke="#ff6a13"/>
+    <text x="670" y="92" font-size="16" font-weight="700" fill="#ff6a13">COMBAT</text>
+    <text x="670" y="120">Le plus de kills</text>
+    <text x="670" y="140">en 15 minutes</text>
+
+    <rect x="780" y="60" width="160" height="110" rx="10" fill="#1f242b" stroke="#2f3640"/>
+    <text x="860" y="92" font-size="16" font-weight="700" fill="#f2f2f2">MORT</text>
+    <text x="860" y="120">Qui, avec quoi, où,</text>
+    <text x="860" y="140">puis ton choix</text>
+  </g>
+
+  <!-- Flèches entre les étapes -->
+  <g stroke="#9aa0a6" stroke-width="2" fill="none" marker-end="url(#fleche)">
+    <line x1="182" y1="115" x2="207" y2="115"/>
+    <line x1="372" y1="115" x2="397" y2="115"/>
+    <line x1="562" y1="115" x2="587" y2="115"/>
+    <line x1="752" y1="115" x2="777" y2="115"/>
+  </g>
+
+  <!-- Réapparition -->
+  <path d="M860 172 V222 H480 V175" stroke="#ff6a13" stroke-width="2" fill="none" marker-end="url(#flecheO)"/>
+  <text x="670" y="212" font-size="13" fill="#ff6a13" text-anchor="middle">Réapparaître après 5 s : même kit, récent ou kit prêt</text>
+
+  <!-- Retour au lobby -->
+  <path d="M900 172 V280 H100 V175" stroke="#9aa0a6" stroke-width="2" stroke-dasharray="6 5" fill="none" marker-end="url(#fleche)"/>
+  <text x="500" y="272" font-size="13" fill="#9aa0a6" text-anchor="middle">Retour au lobby pour changer d'équipement (et tout le monde à la fin de la manche)</text>
+</svg>

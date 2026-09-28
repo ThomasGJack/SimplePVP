@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#9aa0a6"/>
+    </marker>
+    <marker id="flecheO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ff6a13"/>
+    </marker>
+  </defs>
+  <rect width="960" height="380" rx="16" fill="#14171c"/>
+  <text x="24" y="36" font-size="15" font-weight="600" fill="#9aa0a6" letter-spacing="2">ORGANISATION DU CODE (Scripts/Game/SimplePVP)</text>
+
+  <!-- Serveur -->
+  <rect x="20" y="52" width="540" height="310" rx="12" fill="#181c22" stroke="#2f3640"/>
+  <text x="40" y="78" font-size="14" font-weight="700" fill="#ff6a13">SERVEUR · décide de tout</text>
+
+  <g text-anchor="middle">
+    <g font-size="12">
+      <rect x="40" y="92" width="155" height="90" rx="9" fill="#1f242b" stroke="#2f3640"/>
+      <text x="117" y="120" font-size="15" font-weight="700" fill="#f2f2f2">Manches</text>
+      <text x="117" y="142" fill="#c9cdd2">vote, zone, classement</text>
+      <text x="117" y="164" font-family="Consolas, Menlo, monospace" fill="#9aa0a6">Core/</text>
+
+      <rect x="215" y="92" width="155" height="90" rx="9" fill="#1f242b" stroke="#2f3640"/>
+      <text x="292" y="120" font-size="15" font-weight="700" fill="#f2f2f2">Monde</text>
+      <text x="292" y="142" fill="#c9cdd2">météo, portes, corps</text>
+      <text x="292" y="164" font-family="Consolas, Menlo, monospace" fill="#9aa0a6">World/</text>
+
+      <rect x="390" y="92" width="155" height="90" rx="9" fill="#1f242b" stroke="#2f3640"/>
+      <text x="467" y="120" font-size="15" font-weight="700" fill="#f2f2f2">Lobby</text>
+      <text x="467" y="142" fill="#c9cdd2">ordinateur, zone sûre</text>
+      <text x="467" y="164" font-family="Consolas, Menlo, monospace" fill="#9aa0a6">Lobby/</text>
+
+      <rect x="40" y="198" width="155" height="90" rx="9" fill="#1f242b" stroke="#2f3640"/>
+      <text x="117" y="226" font-size="15" font-weight="700" fill="#f2f2f2">Apparition</text>
+      <text x="117" y="248" fill="#c9cdd2">points sûrs, kits</text>
+      <text x="117" y="270" font-family="Consolas, Menlo, monospace" fill="#9aa0a6">Spawn/</text>
+
+      <rect x="215" y="198" width="155" height="90" rx="9" fill="#1f242b" stroke="#2f3640"/>
+      <text x="292" y="226" font-size="15" font-weight="700" fill="#f2f2f2">Combat et score</text>
+      <text x="292" y="248" fill="#c9cdd2">coups, kills, points</text>
+      <text x="292" y="270" font-family="Consolas, Menlo, monospace" fill="#9aa0a6">Combat/ · Score/</text>
+
+      <rect x="390" y="198" width="155" height="90" rx="9" fill="#1f242b" stroke="#2f3640"/>
+      <text x="467" y="226" font-size="15" font-weight="700" fill="#f2f2f2">Bots</text>
+      <text x="467" y="248" fill="#c9cdd2">paliers, IA CRX</text>
+      <text x="467" y="270" font-family="Consolas, Menlo, monospace" fill="#9aa0a6">Bots/</text>
+    </g>
+  </g>
+
+  <rect x="40" y="304" width="505" height="40" rx="9" fill="#10161d" stroke="#2f3640" stroke-dasharray="5 4"/>
+  <text x="292" y="329" font-size="13" fill="#c9cdd2" text-anchor="middle"><tspan font-family="Consolas, Menlo, monospace" fill="#ff6a13">reglages.json</tspan>  lu au démarrage : durées, villes, bots, barème</text>
+
+  <!-- Échanges -->
+  <g font-size="12" text-anchor="middle">
+    <line x1="564" y1="130" x2="696" y2="130" stroke="#9aa0a6" stroke-width="2" marker-end="url(#fleche)"/>
+    <text x="630" y="120" fill="#c9cdd2">état répliqué</text>
+    <text x="630" y="150" fill="#9aa0a6">chrono, classement</text>
+
+    <line x1="564" y1="210" x2="696" y2="210" stroke="#9aa0a6" stroke-width="2" marker-end="url(#fleche)"/>
+    <text x="630" y="200" fill="#c9cdd2">messages</text>
+    <text x="630" y="230" fill="#9aa0a6">fil, points, mort</text>
+
+    <line x1="696" y1="290" x2="564" y2="290" stroke="#ff6a13" stroke-width="2" marker-end="url(#flecheO)"/>
+    <text x="630" y="280" fill="#ff6a13">choix du joueur</text>
+    <text x="630" y="310" fill="#9aa0a6">Net/</text>
+  </g>
+
+  <!-- Joueur -->
+  <rect x="700" y="52" width="240" height="310" rx="12" fill="#181c22" stroke="#2f3640"/>
+  <text x="720" y="78" font-size="14" font-weight="700" fill="#ff6a13">JOUEUR · affiche</text>
+  <g text-anchor="middle" font-size="12">
+    <rect x="715" y="92" width="210" height="76" rx="9" fill="#1f242b" stroke="#2f3640"/>
+    <text x="820" y="120" font-size="15" font-weight="700" fill="#f2f2f2">Affichage</text>
+    <text x="820" y="144" fill="#c9cdd2">chrono, fil, popups, tableau</text>
+
+    <rect x="715" y="182" width="210" height="76" rx="9" fill="#1f242b" stroke="#2f3640"/>
+    <text x="820" y="210" font-size="15" font-weight="700" fill="#f2f2f2">Écran de mort</text>
+    <text x="820" y="234" fill="#c9cdd2">caméra, choix de l'équipement</text>
+
+    <rect x="715" y="272" width="210" height="76" rx="9" fill="#1f242b" stroke="#2f3640"/>
+    <text x="820" y="300" font-size="15" font-weight="700" fill="#f2f2f2">Menu à liste</text>
+    <text x="820" y="324" fill="#c9cdd2">souris et manette</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171b21"/>
+      <stop offset="1" stop-color="#0e1014"/>
+    </linearGradient>
+    <pattern id="grille" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <clipPath id="cadre"><rect width="960" height="240" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#cadre)">
+    <rect width="960" height="240" fill="url(#fond)"/>
+    <rect width="960" height="240" fill="url(#grille)"/>
+    <rect x="0" y="0" width="8" height="240" fill="#ff6a13"/>
+  </g>
+
+  <!-- Viseur -->
+  <g transform="translate(150 120)" stroke="#ff6a13" fill="none" stroke-linecap="round">
+    <circle r="54" stroke-width="4"/>
+    <circle r="30" stroke-width="2" stroke-opacity="0.5"/>
+    <line x1="-78" y1="0" x2="-38" y2="0" stroke-width="4"/>
+    <line x1="38" y1="0" x2="78" y2="0" stroke-width="4"/>
+    <line x1="0" y1="-78" x2="0" y2="-38" stroke-width="4"/>
+    <line x1="0" y1="38" x2="0" y2="78" stroke-width="4"/>
+    <circle r="4" fill="#ff6a13" stroke="none"/>
+  </g>
+
+  <text x="262" y="112" font-size="72" font-weight="700" fill="#f2f2f2">SimplePVP</text>
+  <text x="266" y="158" font-size="28" font-weight="600" letter-spacing="7" fill="#ff6a13">FFA DEATHMATCH</text>
+  <text x="266" y="200" font-size="18" fill="#9aa0a6">Mod Arma Reforger · PvP chacun pour soi · manches de 15 minutes</text>
+</svg>

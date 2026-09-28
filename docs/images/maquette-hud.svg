@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="ciel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b4a57"/>
+      <stop offset="0.62" stop-color="#6d7a78"/>
+      <stop offset="1" stop-color="#4a4f3f"/>
+    </linearGradient>
+    <filter id="ombre" x="-10%" y="-40%" width="120%" height="180%">
+      <feDropShadow dx="1.5" dy="1.5" stdDeviation="0.6" flood-color="#000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Décor simplifié : une rue d'Everon -->
+  <rect width="960" height="540" rx="16" fill="url(#ciel)"/>
+  <g fill="#2b2f2c" opacity="0.85">
+    <path d="M0 330 H120 V250 L170 215 L220 250 V330 Z"/>
+    <path d="M230 330 V230 H360 V330 Z"/>
+    <path d="M600 330 V240 L660 200 L720 240 V330 Z"/>
+    <path d="M730 330 V260 H860 V330 Z"/>
+    <path d="M860 330 V225 H960 V330 Z"/>
+  </g>
+  <g fill="#1d201d" opacity="0.6">
+    <rect x="258" y="255" width="20" height="26"/><rect x="306" y="255" width="20" height="26"/>
+    <rect x="628" y="262" width="18" height="24"/><rect x="760" y="280" width="22" height="22"/>
+  </g>
+  <path d="M0 330 H960 V540 H0 Z" fill="#3c3f33"/>
+  <path d="M380 330 L580 330 L760 540 L200 540 Z" fill="#4c4d45"/>
+
+  <!-- Haut : chrono et score -->
+  <g filter="url(#ombre)" text-anchor="middle">
+    <text x="480" y="44" font-size="24" fill="#f2f2f2">12:34   ·   Morton</text>
+    <text x="480" y="70" font-size="15" fill="#f2f2f2">8 kills   ·   950 pts   ·   3e/24   ·   1er : Kurt_TR (11)</text>
+    <text x="480" y="118" font-size="26" fill="#ff6a13"><tspan fill="#f2f2f2">Jack</tspan> est en série de 5 !</text>
+  </g>
+
+  <!-- Fil des éliminations -->
+  <g filter="url(#ombre)" font-size="13" text-anchor="end">
+    <text x="936" y="36"><tspan fill="#f2f2f2">Jack</tspan><tspan fill="#9aa0a6">  [M16A2]  </tspan><tspan fill="#f2f2f2">[BOT] Kurt_TR</tspan><tspan fill="#ff6a13">  TÊTE</tspan></text>
+    <text x="936" y="58"><tspan fill="#f2f2f2">Mehmet</tspan><tspan fill="#9aa0a6">  [AK-74]  </tspan><tspan fill="#f2f2f2">Lina</tspan></text>
+    <text x="936" y="80"><tspan fill="#f2f2f2">[BOT] Ivan_RU</tspan><tspan fill="#9aa0a6">  [RGD-5]  </tspan><tspan fill="#f2f2f2">Wei</tspan><tspan fill="#9aa0a6">  (achevé)</tspan></text>
+    <text x="936" y="102"><tspan fill="#f2f2f2">Paul</tspan><tspan fill="#9aa0a6">  est mort</tspan></text>
+  </g>
+
+  <!-- Croix de touche (rouge au kill) -->
+  <text x="480" y="283" font-size="44" fill="#e62828" text-anchor="middle" filter="url(#ombre)">×</text>
+
+  <!-- Popups de points -->
+  <g filter="url(#ombre)" text-anchor="middle">
+    <text x="480" y="330" font-size="16" fill="#f2f2f2">[BOT] Kurt_TR éliminé</text>
+    <text x="480" y="356" font-size="19" fill="#ff6a13">+100 Élimination</text>
+    <text x="480" y="382" font-size="19" fill="#ff6a13">+50 Headshot</text>
+    <text x="480" y="408" font-size="19" fill="#ff6a13">+100 Prime : leader abattu</text>
+    <text x="480" y="434" font-size="19" fill="#ff6a13">Série de 5 : soin + munitions</text>
+  </g>
+
+  <!-- Annotations -->
+  <g font-size="12" fill="#e8eaed">
+    <rect x="18" y="26" width="200" height="50" rx="8" fill="#0e1014" opacity="0.72"/>
+    <text x="30" y="46">① Chrono, ville, tes kills,</text>
+    <text x="30" y="64">tes points, ton rang, le 1er</text>
+
+    <rect x="18" y="98" width="200" height="32" rx="8" fill="#0e1014" opacity="0.72"/>
+    <text x="30" y="119">② Bandeau (série, leader, GO)</text>
+
+    <rect x="742" y="116" width="196" height="32" rx="8" fill="#0e1014" opacity="0.72"/>
+    <text x="754" y="137">③ Fil des éliminations</text>
+
+    <rect x="560" y="258" width="206" height="32" rx="8" fill="#0e1014" opacity="0.72"/>
+    <text x="572" y="279">④ Croix de touche, rouge au kill</text>
+
+    <rect x="640" y="378" width="190" height="32" rx="8" fill="#0e1014" opacity="0.72"/>
+    <text x="652" y="399">⑤ Points gagnés, avec un son</text>
+  </g>
+
+  <rect x="18" y="500" width="330" height="26" rx="8" fill="#0e1014" opacity="0.72"/>
+  <text x="30" y="518" font-size="12" fill="#9aa0a6">Maquette de l'affichage, pas une capture du jeu</text>
+</svg>

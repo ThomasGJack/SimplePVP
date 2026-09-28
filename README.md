@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/images/banniere.svg" alt="SimplePVP | FFA Deathmatch" width="100%"></p>
+
 # SimplePVP | FFA Deathmatch
 
 Mod **Arma Reforger** de PvP pur, en **chacun pour soi**, façon Call of Duty.
@@ -18,6 +20,8 @@ Mod **Arma Reforger** de PvP pur, en **chacun pour soi**, façon Call of Duty.
    lobby, on **vote pour la ville suivante** parmi 3, puis départ groupé avec « 3, 2, 1, GO ».
 5. **Des bots** (IA) complètent la partie quand il y a peu de joueurs, et s'effacent quand le serveur se remplit.
 
+<p align="center"><img src="docs/images/parcours.svg" alt="Parcours d'un joueur : lobby, ordinateur, ville, combat, mort, puis réapparition ou retour au lobby" width="100%"></p>
+
 Le nom a été choisi pour être compris d'un Français, d'un Anglais, d'un Turc et d'un Chinois : *FFA* parle aux
 joueurs de CS, *Deathmatch* se traduit directement (死亡竞赛).
 
@@ -27,9 +31,7 @@ joueurs de CS, *Deathmatch* se traduit directement (死亡竞赛).
 
 ### Une manche
 
-```
-ATTENTE ──► EN_COURS (15 min) ──► FIN (10 s, résultats) ──► VOTE (15 s) ──► DÉPART (5 s, figés) ──► EN_COURS …
-```
+<p align="center"><img src="docs/images/cycle-manche.svg" alt="Cycle d'une manche : attente, en cours 15 minutes, fin 10 s, vote 15 s, départ 5 s, puis nouvelle manche" width="100%"></p>
 
 - La **première manche** part dès qu'un joueur est là, dans une ville tirée au sort.
 - On peut **se déployer à tout moment** depuis le lobby, sauf dans les 30 dernières secondes : on part alors avec la
@@ -70,6 +72,9 @@ ATTENTE ──► EN_COURS (15 min) ──► FIN (10 s, résultats) ──► V
 
 ### À l'écran (façon CoD)
 
+<p align="center"><img src="docs/images/maquette-hud.svg" alt="Maquette de l'affichage : chrono et score en haut, bandeau, fil des éliminations à droite, croix de touche et points au centre" width="100%"></p>
+<p align="center"><sub>Maquette de l'affichage prévu (le mod n'a pas encore tourné en jeu : pas de vraie capture pour l'instant).</sub></p>
+
 - En haut : chrono, ville, tes kills, tes points, ton rang et le 1er.
 - Fil des éliminations (tueur, arme, victime, TÊTE), popups « +100 Élimination », croix de touche (rouge au kill).
 - Bandeaux : série, nouveau leader, 1 minute restante, 3-2-1-GO.
@@ -87,6 +92,8 @@ ATTENTE ──► EN_COURS (15 min) ──► FIN (10 s, résultats) ──► V
 ---
 
 ## Organisation du dépôt
+
+<p align="center"><img src="docs/images/architecture.svg" alt="Organisation du code : le serveur décide (manches, monde, lobby, apparition, combat et score, bots), le joueur affiche (affichage, écran de mort, menu)" width="100%"></p>
 
 ```
 mod/                      Le projet Workbench (addon « SimplePVP FFA Deathmatch »)
@@ -107,6 +114,7 @@ mod/                      Le projet Workbench (addon « SimplePVP FFA Deathmatch
     UI/                   HUD, écran de mort, menu à liste
     Net/                  Messages serveur ↔ joueur
 plan/                     Conception : 199 questions et réponses, décisions, plan des modules
+docs/images/              Illustrations du README
 ```
 
 Tous les scripts sont préfixés `SPVP_`.
