@@ -1,0 +1,22 @@
+SCR_Position SPVP_LobbyArrivee {
+ coords 7414.731 162.369 4333.72
+ angles 0 -64.838 0
+}
+GenericEntity SPVP_LobbyArsenal : "{54986385A6AF77B2}Prefabs/Props/Military/Arsenal/ArsenalBoxes/ArsenalBox_Base.et" {
+ components {
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemModes 510
+   m_eArsenalSaveType NO_RESTRICTIONS
+   m_bAlwaysUseDefaultFaction 1
+  }
+  SCR_FactionAffiliationComponent "{5A50E7655452A21D}" {
+   "faction affiliation" "SPVP"
+  }
+ }
+ coords 7411.59 162.369 4334.08
+ angles 0 115.162 0
+}
+GenericEntity SPVP_LobbyDeploy : "{6A7FBC9746345C14}Prefabs/SimplePVP/SPVP_DeployTerminal.et" {
+ coords 7412.79 162.369 4336.62
+ angles 0 115.162 0
+}

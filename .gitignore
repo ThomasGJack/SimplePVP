@@ -1,0 +1,11 @@
+# Clé du serveur officiel : ne jamais publier
+CLE_SERVEUR.txt
+cle_serveur*.txt
+
+# Réglages et journaux d'un serveur
+reglages.json
+lieux_carte.txt
+
+# Caches du Workbench
+*.rdb
+.claude-flow/

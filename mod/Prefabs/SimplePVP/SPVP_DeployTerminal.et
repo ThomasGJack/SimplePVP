@@ -1,0 +1,140 @@
+GenericEntity : "{98079765627F6EA3}Prefabs/Props/Civilian/Computer_E_01/Computer_E_01_case.et" {
+ components {
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   m_fBaseHealth 100000
+   m_bDeleteAfterFinalPhase 0
+  }
+  ActionsManagerComponent "{6A7285A3840B7F94}" {
+   ActionContexts {
+    UserActionContext "{6A7EC2CD0C25607B}" {
+     ContextName "deployer"
+     Position PointInfo "{6A7701BAD4EE434A}" {
+      Offset 0 1 0
+     }
+     Radius 2
+    }
+   }
+   additionalActions {
+    SPVP_DeployAction "{6A7EC04F5B8EA384}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A74F1586DFE89DD}" {
+      Name "DÉPLOYER"
+     }
+     ActionTitle "DÉPLOYER"
+     VisibilityRange 3
+     Duration 0.5
+    }
+    SPVP_VoteAction "{6A7C1E0A5B7D2E01}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E02}" {
+      Name "Voter"
+     }
+     ActionTitle "Voter"
+     VisibilityRange 3
+     Duration 0.3
+     m_iChoix 0
+    }
+    SPVP_VoteAction "{6A7C1E0A5B7D2E03}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E04}" {
+      Name "Voter"
+     }
+     ActionTitle "Voter"
+     VisibilityRange 3
+     Duration 0.3
+     m_iChoix 1
+    }
+    SPVP_VoteAction "{6A7C1E0A5B7D2E05}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E06}" {
+      Name "Voter"
+     }
+     ActionTitle "Voter"
+     VisibilityRange 3
+     Duration 0.3
+     m_iChoix 2
+    }
+    SPVP_KitAction "{6A7C1E0A5B7D2E10}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E20}" {
+      Name "Kit prêt"
+     }
+     ActionTitle "Kit prêt"
+     VisibilityRange 3
+     Duration 0.3
+     m_iKit 0
+    }
+    SPVP_KitAction "{6A7C1E0A5B7D2E11}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E21}" {
+      Name "Kit prêt"
+     }
+     ActionTitle "Kit prêt"
+     VisibilityRange 3
+     Duration 0.3
+     m_iKit 1
+    }
+    SPVP_KitAction "{6A7C1E0A5B7D2E12}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E22}" {
+      Name "Kit prêt"
+     }
+     ActionTitle "Kit prêt"
+     VisibilityRange 3
+     Duration 0.3
+     m_iKit 2
+    }
+    SPVP_KitAction "{6A7C1E0A5B7D2E13}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E23}" {
+      Name "Kit prêt"
+     }
+     ActionTitle "Kit prêt"
+     VisibilityRange 3
+     Duration 0.3
+     m_iKit 3
+    }
+    SPVP_KitAction "{6A7C1E0A5B7D2E14}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E24}" {
+      Name "Kit prêt"
+     }
+     ActionTitle "Kit prêt"
+     VisibilityRange 3
+     Duration 0.3
+     m_iKit 4
+    }
+    SPVP_KitAction "{6A7C1E0A5B7D2E15}" {
+     ParentContextList {
+      "deployer"
+     }
+     UIInfo UIInfo "{6A7C1E0A5B7D2E25}" {
+      Name "Kit prêt"
+     }
+     ActionTitle "Kit prêt"
+     VisibilityRange 3
+     Duration 0.3
+     m_iKit 5
+    }
+   }
+  }
+ }
+}

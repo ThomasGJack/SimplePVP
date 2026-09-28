@@ -1,0 +1,415 @@
+FrameWidgetClass {
+ Name "SPVP_Hud"
+ "Ignore Cursor" 1
+ {
+  VerticalLayoutWidgetClass "{6A73BBE626342D72}" {
+   Name "Bloc"
+   Slot FrameWidgetSlot "{6A73BBE626342D73}" {
+    Anchor 0.5 0 0.5 0
+    PositionY 14
+    OffsetTop 14
+    Alignment 0.5 0
+    SizeToContent 1
+   }
+   "Ignore Cursor" 1
+   {
+    TextWidgetClass "{6A73BBE626342D74}" {
+     Name "Ligne1"
+     Slot LayoutSlot "{6A73BBE626342D75}" {
+      HorizontalAlign 1
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text "SimplePVP"
+     "Font Size" 30
+     "Min Font Size" 30
+     "Horizontal Alignment" Center
+     FontProperties FontProperties "{6A73BBE626342D76}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    TextWidgetClass "{6A73BBE626342D77}" {
+     Name "Ligne2"
+     Slot LayoutSlot "{6A73BBE626342D78}" {
+      HorizontalAlign 1
+      Padding 0 2 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 20
+     "Min Font Size" 20
+     "Horizontal Alignment" Center
+     FontProperties FontProperties "{6A73BBE626342D79}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+   }
+  }
+  RichTextWidgetClass "{6A7E5C0D00004A11}" {
+   Name "Bandeau"
+   Slot FrameWidgetSlot "{6A7E5C0D00004A12}" {
+    Anchor 0.5 0 0.5 0
+    PositionX 0
+    OffsetLeft 0
+    PositionY 96
+    OffsetTop 96
+    SizeX 1400
+    OffsetRight -1400
+    SizeY 60
+    OffsetBottom -156
+    Alignment 0.5 0
+   }
+   "Ignore Cursor" 1
+   Clipping False
+   Text ""
+   "Font Size" 34
+   "Min Font Size" 34
+   "Horizontal Alignment" Center
+   FontProperties FontProperties "{6A7E5C0D00004A13}" {
+    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+    ShadowSize 2
+    ShadowColor 0 0 0 1
+    ShadowOffset 2 2
+   }
+  }
+  RichTextWidgetClass "{6A7E5C0D00004A14}" {
+   Name "Fil"
+   Slot FrameWidgetSlot "{6A7E5C0D00004A15}" {
+    Anchor 1 0 1 0
+    PositionX -30
+    OffsetLeft -30
+    PositionY 30
+    OffsetTop 30
+    SizeX 640
+    OffsetRight -610
+    SizeY 230
+    OffsetBottom -260
+    Alignment 1 0
+   }
+   "Ignore Cursor" 1
+   Clipping False
+   Text ""
+   "Font Size" 18
+   "Min Font Size" 18
+   "Horizontal Alignment" Right
+   FontProperties FontProperties "{6A7E5C0D00004A16}" {
+    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+    ShadowSize 2
+    ShadowColor 0 0 0 1
+    ShadowOffset 2 2
+   }
+  }
+  RichTextWidgetClass "{6A7E5C0D00004A17}" {
+   Name "Popups"
+   Slot FrameWidgetSlot "{6A7E5C0D00004A18}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 70
+    OffsetTop 70
+    SizeX 760
+    OffsetRight -760
+    SizeY 260
+    OffsetBottom -330
+    Alignment 0.5 0
+   }
+   "Ignore Cursor" 1
+   Clipping False
+   Text ""
+   "Font Size" 24
+   "Min Font Size" 24
+   "Horizontal Alignment" Center
+   FontProperties FontProperties "{6A7E5C0D00004A19}" {
+    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+    ShadowSize 2
+    ShadowColor 0 0 0 1
+    ShadowOffset 2 2
+   }
+  }
+  TextWidgetClass "{6A7E5C0D00004A1A}" {
+   Name "Croix"
+   Slot FrameWidgetSlot "{6A7E5C0D00004A1B}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 60
+    OffsetRight -60
+    SizeY 60
+    OffsetBottom -60
+    Alignment 0.5 0.5
+   }
+   "Ignore Cursor" 1
+   Clipping False
+   Text "×"
+   "Font Size" 44
+   "Min Font Size" 44
+   "Horizontal Alignment" Center
+   "Vertical Alignment" Center
+   FontProperties FontProperties "{6A7E5C0D00004A1C}" {
+    Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+    ShadowSize 2
+    ShadowColor 0 0 0 1
+    ShadowOffset 2 2
+   }
+  }
+  FrameWidgetClass "{6A7E5C0D00004A1D}" {
+   Name "Tableau"
+   Slot FrameWidgetSlot "{6A7E5C0D00004A1E}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 1040
+    OffsetRight -1040
+    SizeY 900
+    OffsetBottom -900
+    Alignment 0.5 0.5
+   }
+   "Ignore Cursor" 1
+   {
+    ImageWidgetClass "{6A7E5C0D00004A1F}" {
+     Name "Fond"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A20}" {
+      Anchor 0 0 1 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 0
+      OffsetRight 0
+      SizeY 0
+      OffsetBottom 0
+     }
+     "Ignore Cursor" 1
+     Color 0.05 0.06 0.08 0.82
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A21}" {
+     Name "TabTitre"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A22}" {
+      Anchor 0 0 0 0
+      PositionX 20
+      OffsetLeft 20
+      PositionY 12
+      OffsetTop 12
+      SizeX 1000
+      OffsetRight -1020
+      SizeY 190
+      OffsetBottom -202
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 20
+     "Min Font Size" 20
+     "Horizontal Alignment" Left
+     FontProperties FontProperties "{6A7E5C0D00004A23}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A24}" {
+     Name "TabRang"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A25}" {
+      Anchor 0 0 0 0
+      PositionX 20
+      OffsetLeft 20
+      PositionY 210
+      OffsetTop 210
+      SizeX 60
+      OffsetRight -80
+      SizeY 650
+      OffsetBottom -860
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Left
+     FontProperties FontProperties "{6A7E5C0D00004A26}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A27}" {
+     Name "TabNom"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A28}" {
+      Anchor 0 0 0 0
+      PositionX 90
+      OffsetLeft 90
+      PositionY 210
+      OffsetTop 210
+      SizeX 470
+      OffsetRight -560
+      SizeY 650
+      OffsetBottom -860
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Left
+     FontProperties FontProperties "{6A7E5C0D00004A29}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A2A}" {
+     Name "TabKills"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A2B}" {
+      Anchor 0 0 0 0
+      PositionX 570
+      OffsetLeft 570
+      PositionY 210
+      OffsetTop 210
+      SizeX 100
+      OffsetRight -670
+      SizeY 650
+      OffsetBottom -860
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Center
+     FontProperties FontProperties "{6A7E5C0D00004A2C}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A2D}" {
+     Name "TabMorts"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A2E}" {
+      Anchor 0 0 0 0
+      PositionX 680
+      OffsetLeft 680
+      PositionY 210
+      OffsetTop 210
+      SizeX 100
+      OffsetRight -780
+      SizeY 650
+      OffsetBottom -860
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Center
+     FontProperties FontProperties "{6A7E5C0D00004A2F}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A30}" {
+     Name "TabRatio"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A31}" {
+      Anchor 0 0 0 0
+      PositionX 790
+      OffsetLeft 790
+      PositionY 210
+      OffsetTop 210
+      SizeX 110
+      OffsetRight -900
+      SizeY 650
+      OffsetBottom -860
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Center
+     FontProperties FontProperties "{6A7E5C0D00004A32}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A33}" {
+     Name "TabPoints"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A34}" {
+      Anchor 0 0 0 0
+      PositionX 910
+      OffsetLeft 910
+      PositionY 210
+      OffsetTop 210
+      SizeX 110
+      OffsetRight -1020
+      SizeY 650
+      OffsetBottom -860
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Center
+     FontProperties FontProperties "{6A7E5C0D00004A35}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+    RichTextWidgetClass "{6A7E5C0D00004A36}" {
+     Name "TabPied"
+     Slot FrameWidgetSlot "{6A7E5C0D00004A37}" {
+      Anchor 0 0 0 0
+      PositionX 20
+      OffsetLeft 20
+      PositionY 864
+      OffsetTop 864
+      SizeX 1000
+      OffsetRight -1020
+      SizeY 30
+      OffsetBottom -894
+      Alignment 0 0
+     }
+     "Ignore Cursor" 1
+     Clipping False
+     Text ""
+     "Font Size" 16
+     "Min Font Size" 16
+     "Horizontal Alignment" Left
+     FontProperties FontProperties "{6A7E5C0D00004A38}" {
+      Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+      ShadowSize 2
+      ShadowColor 0 0 0 1
+      ShadowOffset 2 2
+     }
+    }
+   }
+  }
+ }
+}

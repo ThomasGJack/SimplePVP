@@ -1,0 +1,32 @@
+SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
+ ID "56B2B4776E6E4499"
+ Factions {
+  SCR_FreeForAllFaction "{6A703794270515FE}" {
+   FactionKey "SPVP"
+   FactionColor 1 0.416 0.075 1
+   UIInfo SCR_FactionUIInfo "{6A7C4779151F586B}" {
+    Name "SimplePVP"
+    Icon "{CB7DFED27EC4949A}Common/Textures/default_BCR.edds"
+    m_sNameUpper "SIMPLEPVP"
+   }
+   m_OutlineFactionColor 0.165 0.095 0.026 1
+   m_sFactionFlag "{CB7DFED27EC4949A}Common/Textures/default_BCR.edds"
+   m_eTeamKillKickPenaltyOverride NO_KICKS
+   m_bFriendlyToSelf 0
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{6A74647D7ABE4641}" : "{B56E8B4D4B195559}Configs/EntityCatalog/US/Characters_EntityCatalog_US.conf" {
+    }
+    SCR_EntityCatalogMultiList "{6A7D7E7555835D71}" : "{3B679F1799D55F6F}Configs/EntityCatalog/USSR/Characters_EntityCatalog_USSR.conf" {
+    }
+    SCR_EntityCatalogMultiList "{6A7E58AD75AC8BC4}" : "{6F6056A597C462CC}Configs/EntityCatalog/FIA/Characters_EntityCatalog_FIA.conf" {
+    }
+    SCR_EntityCatalogMultiList "{6A774AC15B516C0B}" : "{5F7EC52FC40A03E2}Configs/EntityCatalog/US/InventoryItems_EntityCatalog_US.conf" {
+    }
+    SCR_EntityCatalogMultiList "{6A785E6C63CC6034}" : "{C53421647C3D0D2E}Configs/EntityCatalog/USSR/InventoryItems_EntityCatalog_USSR.conf" {
+    }
+    SCR_EntityCatalogMultiList "{6A7754B19C1BB3B8}" : "{E908001749419691}Configs/EntityCatalog/FIA/InventoryItems_EntityCatalog_FIA.conf" {
+    }
+   }
+  }
+ }
+}

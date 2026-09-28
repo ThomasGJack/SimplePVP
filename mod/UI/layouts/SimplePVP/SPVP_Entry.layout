@@ -1,0 +1,22 @@
+ButtonWidgetClass {
+ Name "Entry"
+ Slot LayoutSlot "{6A7D3B9C1E5F2001}" {
+  HorizontalAlign 3
+  Padding 0 1 0 1
+ }
+ {
+  TextWidgetClass "{6A7D3B9C1E5F2002}" {
+   Name "Label"
+   Slot FrameWidgetSlot "{6A7D3B9C1E5F2003}" {
+    Anchor 0 0 1 1
+    OffsetLeft 8
+    OffsetTop 4
+    OffsetRight -8
+    OffsetBottom -4
+   }
+   Text "Entrée"
+   "Font Size" 18
+   "Min Font Size" 14
+  }
+ }
+}

@@ -1,0 +1,3584 @@
+[
+ {
+  "id": "L01",
+  "theme": "Lobby et zone sûre",
+  "question": "Où placer le lobby sur la carte ?",
+  "aide": "La carte elle-même se choisit dans le thème Villes ; ici, seulement l'endroit du lobby.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Un coin isolé de la carte, loin de toutes les villes — Ex. une petite île ou une ferme perdue. Aucune ville de la rotation autour, personne ne peut s'en approcher à pied.",
+  "effort": "simple",
+  "note_tech": "Juste du placement dans le Workbench, rien à coder.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Dans un grand bâtiment fermé (hangar, entrepôt)",
+   "Une plateforme construite en mer, loin des côtes"
+  ]
+ },
+ {
+  "id": "L02",
+  "theme": "Lobby et zone sûre",
+  "question": "Pour le décor du lobby, on part de quoi ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Un lieu existant de la carte, laissé tel quel — Ex. une base militaire déjà présente. On y ajoute juste l'arsenal et le panneau de déploiement : très peu de travail pour toi.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Un lieu existant + quelques ajouts faits par toi",
+   "Un lobby construit de zéro sur un terrain vide"
+  ]
+ },
+ {
+  "id": "L03",
+  "theme": "Lobby et zone sûre",
+  "question": "Quelle taille pour le lobby ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Compact : tout à moins de 30 m — Point d'arrivée, arsenal et panneau à quelques pas. Tu t'équipes et tu repars en moins d'une minute.",
+  "effort": "simple",
+  "note_tech": "Pas la place pour un vrai stand de tir.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Moyen : environ 100 m, avec la place d'un stand de tir",
+   "Grand : une vraie base à parcourir"
+  ]
+ },
+ {
+  "id": "L04",
+  "theme": "Lobby et zone sûre",
+  "question": "Comment rendre le lobby vraiment sûr ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Invincibilité : personne ne prend de dégâts — Tu peux tirer, mais balles, grenades et chutes ne font aucun mal. Simple, mais certains peuvent gêner (bruit, fumigènes).",
+  "effort": "simple",
+  "note_tech": "Déjà fait dans SimpleRP (mode invincible du menu Staff). Protège aussi des IA.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Armes bloquées : impossible de tirer ou de lancer",
+   "Les deux, sauf au stand de tir où on peut tirer"
+  ]
+ },
+ {
+  "id": "L05",
+  "theme": "Lobby et zone sûre",
+  "question": "Un joueur essaie de sortir du lobby à pied. Que se passe-t-il ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Il est ramené au centre dès qu'il passe la limite — Retour immédiat avec le message « Utilise le panneau pour déployer ». Aucun autre moyen de sortir.",
+  "effort": "simple",
+  "note_tech": "Téléportation déjà écrite dans SimpleRP (menu Staff).",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Avertissement, puis 10 s pour faire demi-tour",
+   "Il peut sortir, mais il perd sa protection"
+  ]
+ },
+ {
+  "id": "L06",
+  "theme": "Lobby et zone sûre",
+  "question": "En pleine manche, peut-on revenir au lobby sans mourir (pour changer d'équipement) ?",
+  "aide": "Ne concerne pas le retour au lobby après une mort.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, on ne revient au lobby qu'en mourant — Pour changer d'équipement, il faut se faire tuer. Aucun moyen de fuir un combat.",
+  "effort": "simple",
+  "note_tech": "Si le menu Échap propose de réapparaître, il faudra le cacher (sinon c'est un suicide gratuit).",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, par un menu, après 10 s sans bouger",
+   "Oui, tout de suite, mais ça compte comme une mort"
+  ]
+ },
+ {
+  "id": "L07",
+  "theme": "Lobby et zone sûre",
+  "question": "Tu arrives sur le serveur quand il reste 1 minute de manche. Peux-tu déployer ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Non dans les 30 dernières secondes — Le panneau se bloque juste avant la fin et affiche « Prochaine manche dans… ». Tu t'équipes en attendant.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, toujours, jusqu'à la dernière seconde",
+   "Non dans les 2 dernières minutes"
+  ]
+ },
+ {
+  "id": "L08",
+  "theme": "Lobby et zone sûre",
+  "question": "La manche se termine pendant que tu t'équipes au lobby. Que vois-tu ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "L'écran de fin de manche, comme tout le monde — Classement final et meilleurs joueurs en plein écran quelques secondes, puis tu reprends ton équipement.",
+  "effort": "moyen",
+  "note_tech": "Écran à créer, commun avec la ville. Si l'arsenal est ouvert, il peut se fermer : tu le rouvres.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Juste un message, tu continues sans coupure",
+   "Le classement final en coin d'écran, sans te bloquer"
+  ]
+ },
+ {
+  "id": "L10",
+  "theme": "Lobby et zone sûre",
+  "question": "Comment ouvres-tu le panneau de déploiement ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "En allant vers un écran ou une table dans le lobby — Action « Déployer » sur un objet posé à côté de l'arsenal. Marche pareil au clavier et à la manette.",
+  "effort": "simple",
+  "note_tech": "Comme ton PC SimpleRP (SRP_PC) : une action sur un objet qui ouvre un menu.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Avec une touche, n'importe où dans le lobby",
+   "Il s'ouvre tout seul quand tu fermes l'arsenal"
+  ]
+ },
+ {
+  "id": "L11",
+  "theme": "Lobby et zone sûre",
+  "question": "À quoi ressemble le panneau de déploiement ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Plein écran : carte de la ville + gros bouton DÉPLOYER — Tu vois la zone de combat sur la carte, avec les infos de la manche autour. Tu sais où tu vas avant de partir.",
+  "effort": "gros",
+  "note_tech": "Le menu de déploiement du jeu de base a déjà carte + bouton : à adapter plutôt qu'à refaire.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Petite fenêtre simple au centre de l'écran",
+   "Style Call of Duty : ton soldat à gauche, infos à droite"
+  ]
+ },
+ {
+  "id": "LN01",
+  "theme": "Lobby et zone sûre",
+  "question": "Quelle ambiance visuelle pour tous les menus SimplePVP (couleurs, logo, écrans) ?",
+  "aide": "Vaut pour l'arsenal, le déploiement, les scores et l'écran de fin de manche.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Arcade façon CoD : fond sombre + une couleur vive — Look nerveux et moderne, une couleur signature (orange ou rouge) pour les kills et les boutons.",
+  "effort": "moyen",
+  "note_tech": "Donne une identité propre à SimplePVP, bien distincte de la PAG.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Militaire sobre : vert, gris et blanc",
+   "Reprendre le style de la PAG et de SimpleRP"
+  ]
+ },
+ {
+  "id": "L12",
+  "theme": "Lobby et zone sûre",
+  "question": "En plus de la ville et du temps restant, quelle info mettre en avant sur le panneau ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Le nombre de joueurs et d'IA dans la ville — Ex. « 14 joueurs, 6 IA ». Tu sais à quoi t'attendre en arrivant.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Ton score de la manche et ton rang",
+   "Le résumé de ton équipement"
+  ]
+ },
+ {
+  "id": "L13",
+  "theme": "Lobby et zone sûre",
+  "question": "Tu cliques sur DÉPLOYER. Combien de temps avant d'être en ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Tout de suite (écran noir de 1 à 2 s) — Aucune attente. Mais un clic par erreur t'envoie en ville à moitié équipé.",
+  "effort": "simple",
+  "note_tech": "Le court fondu au noir cache le chargement de la ville.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "5 s de compte à rebours, annulable",
+   "10 s pendant lesquelles tu restes libre de bouger"
+  ]
+ },
+ {
+  "id": "L14",
+  "theme": "Lobby et zone sûre",
+  "question": "Un joueur veut déployer sans aucune arme à feu. On fait quoi ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "On le laisse partir, c'est son choix — Couteau ou mains nues, libre à lui. Ça peut même donner des vidéos drôles.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Le bouton DÉPLOYER est bloqué sans arme à feu",
+   "Avertissement à confirmer"
+  ]
+ },
+ {
+  "id": "L15",
+  "theme": "Lobby et zone sûre",
+  "question": "Veux-tu un stand de tir dans le lobby ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non, pas de tir dans le lobby — On s'équipe et on part. Plus simple ; les essais se font directement en ville.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, avec des cibles de 25 à 300 m",
+   "Oui, simple : quelques cibles à moins de 50 m"
+  ]
+ },
+ {
+  "id": "L16",
+  "theme": "Lobby et zone sûre",
+  "question": "Au stand de tir, que deviennent les munitions que tu tires ?",
+  "aide": "Seulement s'il y a un stand de tir.",
+  "type": "conseil",
+  "choix_index": 1,
+  "decision": "Consommées, mais tout est rechargé quand tu déploies — Tu vides tes chargeurs pour l'essai ; au départ, ils sont tous remplis automatiquement.",
+  "effort": "simple",
+  "note_tech": "Seuls les chargeurs se remplissent : une grenade lancée au stand est à reprendre à l'arsenal.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Munitions infinies au stand, jamais consommées",
+   "Consommées : tu repasses à l'arsenal pour recharger"
+  ]
+ },
+ {
+  "id": "L17",
+  "theme": "Lobby et zone sûre",
+  "question": "Au stand de tir, peut-on tester grenades et lance-roquettes ?",
+  "aide": "Seulement s'il y a un stand de tir.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non, armes à feu seulement — Grenades et roquettes bloquées dans tout le lobby. Stand calme, mais aucun essai d'explosif.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, dans un coin à part, loin des tireurs",
+   "Oui, partout sur le stand"
+  ]
+ },
+ {
+  "id": "L18",
+  "theme": "Lobby et zone sûre",
+  "question": "Dans le lobby, qu'est-ce qui reste affiché en permanence à l'écran ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Temps restant, ville en cours et top 5 des tueurs — Tu vois qui domine la manche pendant que tu t'équipes.",
+  "effort": "moyen",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Juste le temps restant et la ville en cours",
+   "Rien : tout est dans le panneau de déploiement"
+  ]
+ },
+ {
+  "id": "LN02",
+  "theme": "Lobby et zone sûre",
+  "question": "Où voir en jeu le classement général (toutes manches confondues) ?",
+  "aide": "Seulement si les stats sont sauvegardées d'une manche à l'autre.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Un tableau du top 10 visible au lobby — Un écran dans le lobby affiche le top 10 du jour, de la semaine et de toujours.",
+  "effort": "moyen",
+  "note_tech": "Le plus motivant : tout le monde le voit en s'équipant.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Commandes dans le chat : /top et /stats",
+   "Seulement sur le site et sur Discord"
+  ]
+ },
+ {
+  "id": "L19",
+  "theme": "Lobby et zone sûre",
+  "question": "Depuis le lobby, peut-on suivre ce qui se passe en ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Seulement le fil des éliminations — « Jack a tué Paul (M4, 120 m) » en coin d'écran. Pas d'image de la partie.",
+  "effort": "moyen",
+  "note_tech": "Le jeu de base a un fil des morts ; l'arme et la distance sont à ajouter.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, en suivant un joueur avec une caméra derrière lui",
+   "Rien : le lobby est coupé de la partie"
+  ]
+ },
+ {
+  "id": "L20",
+  "theme": "Lobby et zone sûre",
+  "question": "Comment marche le chat vocal dans le lobby ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Voix de proximité normale — Tu entends ceux qui sont près de toi, comme en ville. Naturel : on se croise et on discute.",
+  "effort": "simple",
+  "note_tech": "le jeu de base le gère",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Un seul canal pour tout le lobby",
+   "Voix coupée, chat écrit seulement"
+  ]
+ },
+ {
+  "id": "L21",
+  "theme": "Lobby et zone sûre",
+  "question": "Où apparais-tu dans le lobby (à la connexion ou après une mort) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Toujours au même point, face à l'arsenal — Simple et clair, mais tout le monde arrive au même endroit : soldats collés les uns aux autres.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Sur un point au hasard parmi 5 à 10 autour de l'arsenal",
+   "Devant le panneau de déploiement"
+  ]
+ },
+ {
+  "id": "L22",
+  "theme": "Lobby et zone sûre",
+  "question": "Comment sais-tu que tu es protégé dans le lobby ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Icône bouclier « ZONE SÛRE » à l'écran — Affichée en permanence tant que tu es dans le lobby, elle disparaît quand tu déploies.",
+  "effort": "moyen",
+  "note_tech": "Même petit affichage que le temps de manche ; une icône du jeu de base peut servir.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Limite visible sur le terrain + message à l'entrée",
+   "Rien de spécial : c'est expliqué une fois à la connexion"
+  ]
+ },
+ {
+  "id": "L23",
+  "theme": "Lobby et zone sûre",
+  "question": "Peut-on poser ou jeter des objets par terre dans le lobby ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, mais tout objet au sol disparaît après 1 minute — Tu peux te débarrasser d'un truc librement ; le nettoyage évite le bazar et le lag.",
+  "effort": "simple",
+  "note_tech": "Nettoyage du jeu de base (déjà vu dans SimpleRP) ; 1 min au lobby seul = petit script.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, impossible de lâcher quoi que ce soit",
+   "Oui, librement, nettoyage à chaque nouvelle manche"
+  ]
+ },
+ {
+  "id": "L24",
+  "theme": "Lobby et zone sûre",
+  "question": "Que fait-on d'un joueur qui reste sans rien faire dans le lobby ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Exclu seulement quand le serveur est presque plein — Tant qu'il reste des places, il peut attendre. À 2 places du maximum, les absents les plus anciens partent pour en libérer.",
+  "effort": "moyen",
+  "note_tech": "Le jeu ne dit pas qui attend pour entrer : on vise « presque plein » (seuil réglable).",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Avertissement à l'écran, puis exclu du serveur",
+   "Jamais exclu, juste marqué « absent » au classement"
+  ]
+ },
+ {
+  "id": "L25",
+  "theme": "Lobby et zone sûre",
+  "question": "Au bout de combien de temps sans bouger un joueur du lobby est-il considéré absent ?",
+  "aide": "L'absence en pleine ville est un autre sujet. Ouvrir l'arsenal compte comme une activité.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "10 minutes — Laisse le temps d'une pause café ou de régler son équipement tranquillement.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "3 minutes",
+   "20 minutes"
+  ]
+ },
+ {
+  "id": "A01",
+  "theme": "Arsenal et équipement",
+  "question": "L'arsenal propose quoi comme contenu : seulement le jeu de base, ou aussi des mods d'armes et d'équipement ?",
+  "aide": "Chaque mod ajouté = un téléchargement en plus pour les joueurs avant de pouvoir rejoindre.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Jeu de base uniquement — Armes et tenues US, soviétiques et FIA du jeu. Rien à télécharger en plus : le serveur le plus facile à rejoindre.",
+  "effort": "simple",
+  "note_tech": "Le jeu de base le gère : une liste d'arsenal commune, sans tri par camp.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Jeu de base + 1 ou 2 gros mods connus",
+   "Jeu de base + beaucoup de mods"
+  ]
+ },
+ {
+  "id": "A02",
+  "theme": "Arsenal et équipement",
+  "question": "Si tu ajoutes des mods d'armes, lesquels ?",
+  "aide": "Seulement si l'arsenal ne contient pas que le jeu de base.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "RHS seul — Le plus gros mod d'armes et tenues modernes (US, russes), très téléchargé : beaucoup de joueurs l'ont déjà.",
+  "effort": "moyen",
+  "note_tech": "RHS Status Quo apporte aussi les viseurs thermiques et la vision nocturne (questions plus bas).",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "RHS + AMF",
+   "RHS + AMF + packs d'armes populaires"
+  ]
+ },
+ {
+  "id": "A03",
+  "theme": "Arsenal et équipement",
+  "question": "Quel menu utiliser pour l'arsenal ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Bacon Loadout Editor, comme sur SimpleRP — Menu complet déjà rodé : tenue, armes, accessoires, aperçu du perso. Je réutilise tes réglages (avertissement et filigrane masqués).",
+  "effort": "simple",
+  "note_tech": "Déjà fait dans SimpleRP (SRP_BaconCompat) ; le mod Bacon devient une dépendance du serveur.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Arsenal du jeu de base",
+   "Menu SimplePVP fait maison"
+  ]
+ },
+ {
+  "id": "A04",
+  "theme": "Arsenal et équipement",
+  "question": "Dans le lobby, comment on ouvre l'arsenal ?",
+  "aide": "Le lobby lui-même (taille, décor, sécurité) est traité dans une autre partie.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Il s'ouvre tout seul à ton arrivée — Dès que tu arrives au lobby, l'arsenal s'affiche ; tu le fermes quand tu es prêt. Le plus direct, façon menu de CoD.",
+  "effort": "simple",
+  "note_tech": "Appliquer un kit Bacon recrée le perso : veiller à ce que le menu ne se rouvre pas en boucle.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "En allant à une caisse ou un présentoir",
+   "Avec une touche, n'importe où dans le lobby"
+  ]
+ },
+ {
+  "id": "A05",
+  "theme": "Arsenal et équipement",
+  "question": "Combien d'équipements chaque joueur peut-il sauvegarder ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "5 emplacements — Cinq équipements à toi, affichés avec leurs armes et leur tenue, comme les classes perso de CoD.",
+  "effort": "simple",
+  "note_tech": "Déjà dans Bacon ; un nom choisi par le joueur demanderait de retoucher son menu.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Un seul : le dernier utilisé",
+   "3 emplacements"
+  ]
+ },
+ {
+  "id": "A06",
+  "theme": "Arsenal et équipement",
+  "question": "Tes équipements sauvegardés restent combien de temps ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Pour toujours, sur le serveur — Enregistrés dans un fichier du serveur : tu les retrouves même des semaines après, sans rien refaire.",
+  "effort": "simple",
+  "note_tech": "Déjà fait par Bacon. Garder une seule faction hostile à elle-même, sinon les kits se perdent.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Jusqu'à ta déconnexion",
+   "Jusqu'au redémarrage du serveur"
+  ]
+ },
+ {
+  "id": "A07",
+  "theme": "Arsenal et équipement",
+  "question": "Peut-on changer d'équipement sans repasser par le lobby ?",
+  "aide": "Le déroulement du déploiement et de la réapparition est traité dans une autre partie.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, choix parmi tes kits à l'écran de mort — Après une mort, tu choisis un de tes équipements sauvegardés avant de réapparaître, comme dans CoD.",
+  "effort": "moyen",
+  "note_tech": "Écran de choix à faire : il lit les kits Bacon du joueur et applique le bon à la réapparition.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, seulement au lobby",
+   "Oui, bouton « Modifier mon kit » à l'écran de mort"
+  ]
+ },
+ {
+  "id": "A08",
+  "theme": "Arsenal et équipement",
+  "question": "Faut-il des équipements tout prêts pour les nouveaux joueurs ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, 4 à 6 kits classiques — Assaut, sniper, mitrailleur, combat rapproché, etc. Un nouveau choisit en un clic et joue tout de suite.",
+  "effort": "moyen",
+  "note_tech": "Tu crées les kits en jeu avec le mode admin de Bacon (10 places) ; reste l'écran de choix à faire.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, un seul kit de base",
+   "Non, chacun fait le sien"
+  ]
+ },
+ {
+  "id": "A09",
+  "theme": "Arsenal et équipement",
+  "question": "Si un joueur se déploie sans avoir rien choisi, il part avec quoi ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Un kit prêt tiré au hasard — Il reçoit un des kits tout prêts au hasard. Varié et amusant, mais il peut tomber sur un kit qu'il n'aime pas.",
+  "effort": "simple",
+  "note_tech": "Seulement si des kits tout prêts existent.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Toujours le même kit de base",
+   "Il ne peut pas se déployer"
+  ]
+ },
+ {
+  "id": "A10",
+  "theme": "Arsenal et équipement",
+  "question": "Combien de grandes armes un joueur peut-il porter ?",
+  "aide": "« Grande arme » = fusil, mitrailleuse, sniper, lance-roquettes ; le pistolet est à part.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Comme le jeu : 2 grandes armes + pistolet — Deux emplacements (ex. fusil + sniper, ou fusil + lance-roquettes) plus le pistolet.",
+  "effort": "simple",
+  "note_tech": "Le jeu de base le gère.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "1 grande arme + pistolet",
+   "1 grande arme + pistolet + 1 lanceur"
+  ]
+ },
+ {
+  "id": "A13",
+  "theme": "Arsenal et équipement",
+  "question": "Grenades à fragmentation : combien par vie ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Autant que tu en ranges — Libre comme le reste de l'arsenal. Risque de pluie de grenades sur les points chauds.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "2 maximum",
+   "Aucune"
+  ]
+ },
+ {
+  "id": "A14",
+  "theme": "Arsenal et équipement",
+  "question": "Fumigènes (et autres grenades non mortelles) : quelle règle ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Libres — Autant que tu veux. Les rues peuvent vite être noyées de fumée.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "2 maximum par vie",
+   "Interdits"
+  ]
+ },
+ {
+  "id": "A15",
+  "theme": "Arsenal et équipement",
+  "question": "L'arsenal est libre : quelle règle pour les lance-roquettes (RPG, LAW…) et le nombre de roquettes emportées ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Libres, avec toutes les roquettes — Lanceur et autant de roquettes que tu portes. Explosions partout, gros carnages dans les immeubles.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Autorisés, 1 roquette par vie",
+   "Interdits"
+  ]
+ },
+ {
+  "id": "A17",
+  "theme": "Arsenal et équipement",
+  "question": "Matériel de soin : qu'est-ce qu'on peut emporter ?",
+  "aide": "La façon dont on se soigne (vie qui remonte ou non) est traitée dans une autre partie.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Libre : tout le médical du jeu — Bandages, garrots, morphine, poches de sérum, autant que tu en ranges.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Limité par vie (ex. 3 bandages, 1 garrot, 1 morphine)",
+   "Rien"
+  ]
+ },
+ {
+  "id": "A21",
+  "theme": "Arsenal et équipement",
+  "question": "Poids et endurance : comment ça marche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Comme le jeu de base — Plus tu portes lourd, plus tu es lent et essoufflé. Réaliste, mais les gros sacs ralentissent tout.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Fatigue réduite de moitié",
+   "Endurance infinie"
+  ]
+ },
+ {
+  "id": "A22",
+  "theme": "Arsenal et équipement",
+  "question": "À chaque apparition, tes munitions : ce que tu as mis dans ton équipement, ou un nombre fixé par le serveur ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Ce que tu as rangé, sans limite — Tu remplis gilet et sac comme tu veux, tout est redonné à chaque vie.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Nombre fixé par le serveur",
+   "Libre mais plafonné"
+  ]
+ },
+ {
+  "id": "A23",
+  "theme": "Arsenal et équipement",
+  "question": "Récupérer des munitions pendant une vie : comment ?",
+  "aide": "Ramasser sur les joueurs tués fait l'objet d'une question à part.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Aucun réappro — Plus de balles ? Tu finis au pistolet, ou tu meurs et tu repars plein.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Caisses de munitions dans la ville",
+   "Un chargeur rendu à chaque kill"
+  ]
+ },
+ {
+  "id": "A24",
+  "theme": "Arsenal et équipement",
+  "question": "Peut-on ramasser sur les joueurs tués ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, tout — Armes, munitions, grenades, équipement : comme dans Arma, tu peux fouiller entièrement le corps.",
+  "effort": "simple",
+  "note_tech": "Le jeu de base le gère.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Seulement l'arme tombée au sol",
+   "Rien"
+  ]
+ },
+ {
+  "id": "AN03",
+  "theme": "Arsenal et équipement",
+  "question": "Combien de temps un corps et ce qu'il laisse tomber restent-ils au sol en ville ?",
+  "aide": "Plus il y a d'objets au sol, plus le serveur rame. Compte surtout si on peut ramasser sur les morts.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "2 minutes, avec un nombre maximum de corps — Le temps de ramasser une arme ou des chargeurs ; au-delà de 30 corps, les plus anciens disparaissent.",
+  "effort": "simple",
+  "note_tech": "Bon équilibre entre ramassage et performances.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "30 secondes",
+   "Jusqu'à la fin de la manche"
+  ]
+ },
+ {
+  "id": "A25",
+  "theme": "Arsenal et équipement",
+  "question": "Proposer de copier l'équipement du joueur qui vient de te tuer ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non — Chacun construit son équipement lui-même, pas de copie possible.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, depuis l'écran de mort",
+   "Oui, et le sauvegarder dans un emplacement"
+  ]
+ },
+ {
+  "id": "D01",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Après une mort en pleine manche, tu réapparais direct en ville, tu repasses au lobby, ou tu choisis sur l'écran de mort ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Écran de mort avec deux boutons — « Réapparaître » te renvoie en ville avec le même équipement, « Lobby » te ramène à l'arsenal pour changer.",
+  "effort": "moyen",
+  "note_tech": "Petit écran à créer, du même genre que tes menus SRP_Terminal et SRP_PC.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Direct en ville après le délai",
+   "Retour au lobby à chaque mort"
+  ]
+ },
+ {
+  "id": "D02",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Quand tu réapparais en ville sans repasser au lobby, tu repars avec quel équipement ?",
+  "aide": "Seulement si on peut réapparaître en ville sans repasser par le lobby.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Au choix parmi tes 3 derniers équipements — Sur l'écran de mort, tu choisis vite une des 3 dernières combinaisons armes + tenue prises à l'arsenal.",
+  "effort": "moyen",
+  "note_tech": "3 copies gardées par joueur, plus un choix à ajouter sur l'écran de mort.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Celui pris à ta dernière sortie du lobby",
+   "Ce que tu portais au moment de ta mort"
+  ]
+ },
+ {
+  "id": "D03",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Quand une nouvelle manche commence dans une autre ville, comment les joueurs y arrivent ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Tout le monde revient au lobby — Fin de manche = retour en zone sûre ; chacun se rééquipe puis se redéploie dans la nouvelle ville quand il veut.",
+  "effort": "simple",
+  "note_tech": "Tous téléportés au lobby, comme le fait ton menu staff (SRP_Admin).",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Déploiement automatique, même équipement",
+   "Panneau de déploiement avec compte à rebours"
+  ]
+ },
+ {
+  "id": "DN04",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Au début d'une manche, tout le monde apparaît en même temps : bloque-t-on les tirs quelques secondes ?",
+  "aide": "Seulement si tous les joueurs partent ensemble au début de la manche.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, 5 s figé sur place avec compte à rebours — Tu vois la ville et le décompte « 3, 2, 1, GO », puis tout le monde est lâché en même temps.",
+  "effort": "moyen",
+  "note_tech": "Départ façon CoD, équitable pour tous.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, on peut tirer dès l'apparition",
+   "Oui, 10 s où on bouge mais sans pouvoir tirer"
+  ]
+ },
+ {
+  "id": "D05",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Comment est choisi l'endroit où tu apparais dans la ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Automatique, loin des ennemis — Le jeu choisit un point libre, éloigné des joueurs et bots vivants. Tu ne choisis rien, comme dans CoD.",
+  "effort": "simple",
+  "note_tech": "Base existante : SRP_SpawnLogic choisit déjà un point sans joueur autour ; on ajoute les bots.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Tu choisis un quartier sur la carte",
+   "Point prévu à l'avance tiré au hasard"
+  ]
+ },
+ {
+  "id": "D06",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Qui place les points d'apparition possibles dans chaque ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Le jeu les trouve tout seul — À chaque manche, le jeu cherche des endroits au sol et dégagés autour du centre-ville. Zéro travail par ville.",
+  "effort": "moyen",
+  "note_tech": "Recherche de place libre déjà utilisée pour tes IA (SRP_Enemy). Attention aux jardins clos et à l'eau.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Toi, à la main dans Workbench",
+   "Tes points d'abord, sinon automatique"
+  ]
+ },
+ {
+  "id": "D07",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "À quelle distance minimale d'un ennemi un joueur peut-il apparaître ?",
+  "aide": "Si aucun point ne respecte la distance, le jeu prend le point le plus éloigné de tous.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Selon le nombre de joueurs — 150 m quand il y a peu de monde, jusqu'à 60 m quand la ville est pleine.",
+  "effort": "simple",
+  "note_tech": "Même calcul, seuil ajusté au nombre de vivants (joueurs + bots).",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "50 m",
+   "100 m"
+  ]
+ },
+ {
+  "id": "D08",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Les joueurs peuvent-ils apparaître à l'intérieur des bâtiments ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Oui, étages et toits compris — Points aussi aux étages et sur les toits accessibles : plus varié, mais il faut les poser à la main.",
+  "effort": "moyen",
+  "note_tech": "Même code, mais beaucoup de points à poser puis vérifier un par un en jeu.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Non, dehors uniquement",
+   "Oui, au rez-de-chaussée seulement"
+  ]
+ },
+ {
+  "id": "D09",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "En plus de la distance minimale, comment éviter qu'on tue les joueurs juste à leur apparition ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Points évités après un combat proche — Un point près duquel quelqu'un vient de tirer ou de mourir n'est plus utilisé pendant 30 s.",
+  "effort": "moyen",
+  "note_tech": "Le serveur est prévenu des tirs (tes IA s'en servent déjà dans SRP_EnemySenses).",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Pas d'autre règle",
+   "Jamais près de ton tueur ni de ta mort"
+  ]
+ },
+ {
+  "id": "D10",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Combien de temps entre ta mort et ta réapparition en ville ?",
+  "aide": "Écran de mort compris.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "5 secondes — Le temps de lire l'écran de mort et de souffler, puis retour au combat.",
+  "effort": "simple",
+  "note_tech": "Réglage déjà présent dans SRP_SpawnLogic (délai de réapparition).",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "3 secondes",
+   "10 secondes"
+  ]
+ },
+ {
+  "id": "D11",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Le délai de réapparition est-il toujours le même ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, toujours le même — Pareil pour tout le monde, à chaque mort. Facile à comprendre.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Plus long si suicide, chute ou hors zone",
+   "Plus long si tu meurs en boucle"
+  ]
+ },
+ {
+  "id": "D12",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Combien de temps dure la protection à l'apparition ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "5 secondes — Le temps de regarder autour de toi et de te mettre à couvert.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "3 secondes",
+   "8 secondes"
+  ]
+ },
+ {
+  "id": "D13",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Pendant la protection d'apparition, que se passe-t-il si on te tire dessus ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Dégâts très réduits — Tu prends 10 % des dégâts : tu peux encore mourir sous un gros tir, mais pas d'une balle isolée.",
+  "effort": "moyen",
+  "note_tech": "Il faut réduire chaque coup reçu ; les saignements sont à vérifier en essai.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Aucun dégât du tout",
+   "Aucun dégât, et les bots t'ignorent"
+  ]
+ },
+ {
+  "id": "D14",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "La protection d'apparition s'arrête-t-elle avant la fin si tu passes à l'action ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, dès que tu tires ou épaules — Viser ou tirer coupe la protection : impossible de préparer un tir tranquille en étant intouchable.",
+  "effort": "moyen",
+  "note_tech": "Épauler se voit chez le joueur, qui prévient le serveur.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, dès que tu tires",
+   "Non, mais ton arme est bloquée pendant"
+  ]
+ },
+ {
+  "id": "D15",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Comment sait-on qu'un joueur est protégé ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Compte à rebours sur ton écran seulement — Toi seul sais que tu es protégé ; les ennemis ne voient rien de spécial.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Ton écran + message pour le tireur",
+   "Ton écran + marqueur visible au-dessus de toi"
+  ]
+ },
+ {
+  "id": "D16",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Sur ton écran de mort, qu'est-ce qui s'affiche à propos de ton tueur ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Nom, arme, distance et sa vie restante — En plus, « il lui reste 35 % de vie » : tu sais si tu l'avais presque eu. Très CoD.",
+  "effort": "simple",
+  "note_tech": "Sa vie est lue au moment du kill, pour un joueur comme pour un bot.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Son nom et son arme",
+   "Nom, arme et distance"
+  ]
+ },
+ {
+  "id": "D17",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Pendant l'attente avant de réapparaître, que montre la caméra ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Vue au-dessus de ton corps, tournée vers le tueur — La caméra monte au-dessus de toi et pivote vers l'endroit d'où venait le tir.",
+  "effort": "simple",
+  "note_tech": "Base : ta caméra de mort SimpleRP (SRP_DeathCamera), qu'on oriente vers le tueur.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Vue en direct derrière ton tueur",
+   "Écran sombre avec les infos seulement"
+  ]
+ },
+ {
+  "id": "D18",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Après ta mort, peux-tu savoir où se trouve ton tueur ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, jamais — Seuls son nom et son arme s'affichent. À toi de le retrouver.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, sur une carte pendant l'écran de mort",
+   "Oui, marqué 10 s après ta réapparition"
+  ]
+ },
+ {
+  "id": "D21",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Peut-on se tuer soi-même (bouton « Réapparaître » du menu) pour repartir ailleurs ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, mais ça compte comme une mort — Le bouton marche à tout moment, tu repars ailleurs, mais ta mort est comptée.",
+  "effort": "simple",
+  "note_tech": "C'est le fonctionnement du jeu de base.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, désactivé",
+   "Gratuit pendant ta protection seulement"
+  ]
+ },
+ {
+  "id": "D24",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Si un joueur reste sur le panneau de déploiement sans cliquer, que se passe-t-il ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Rien, il peut y rester — Il reste là aussi longtemps qu'il veut, comme au lobby.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Déployé automatiquement après 30 s",
+   "Renvoyé au lobby après 2 min"
+  ]
+ },
+ {
+  "id": "D25",
+  "theme": "Déploiement, apparition et réapparition",
+  "question": "Comment se passe l'arrivée à l'écran quand tu apparais en ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Fondu au noir rapide — 1 seconde de noir puis l'image revient : discret, et ça cache le chargement de la ville autour de toi.",
+  "effort": "simple",
+  "note_tech": "Le jeu de base sait faire un fondu au noir ; il peut durer le temps que la ville charge.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Caméra qui descend du ciel",
+   "Instantané"
+  ]
+ },
+ {
+  "id": "V01",
+  "theme": "Villes, cartes et rotation",
+  "question": "Sur quelle(s) île(s) du jeu de base veux-tu jouer au lancement du serveur ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Everon seulement — La grande île du jeu : des dizaines de villes et villages, de quoi faire tourner les manches longtemps sans se répéter.",
+  "effort": "simple",
+  "note_tech": "Un seul monde à préparer : un lobby et une liste de villes.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Everon + Arland",
+   "Everon + Arland + Kolguev"
+  ]
+ },
+ {
+  "id": "V02",
+  "theme": "Villes, cartes et rotation",
+  "question": "Veux-tu ajouter des cartes faites par la communauté (mods de cartes) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, plus tard, une fois le serveur lancé — On démarre sur les îles du jeu, puis on ajoute une carte populaire faite pour le combat en ville.",
+  "effort": "moyen",
+  "note_tech": "La carte devient un téléchargement obligatoire pour tous, même pour jouer sur Everon.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, jeu de base uniquement",
+   "Oui, dès le lancement"
+  ]
+ },
+ {
+  "id": "V03",
+  "theme": "Villes, cartes et rotation",
+  "question": "Si tu joues sur plusieurs îles : quand le serveur passe-t-il d'une île à l'autre ?",
+  "aide": "Seulement avec plusieurs îles. Changer d'île recharge le jeu de tout le monde (1 à 2 min d'écran de chargement).",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Seulement au redémarrage du serveur — L'île change à chaque redémarrage (ex. toutes les 6 h) : aucun chargement pendant qu'on joue.",
+  "effort": "simple",
+  "note_tech": "Le mod choisit l'île au démarrage du serveur, avant l'arrivée des joueurs.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "À n'importe quelle manche",
+   "Toutes les 4 manches environ"
+  ]
+ },
+ {
+  "id": "V04",
+  "theme": "Villes, cartes et rotation",
+  "question": "Combien de villes veux-tu dans la rotation au lancement ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "8 à 10 villes — Bonne variété : environ 2 h de jeu avant de revoir la même ville.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "4 à 5 villes",
+   "15 villes ou plus"
+  ]
+ },
+ {
+  "id": "V05",
+  "theme": "Villes, cartes et rotation",
+  "question": "Quel genre de lieux veux-tu surtout dans la rotation ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Un mélange équilibré des deux — On alterne rues serrées et espaces plus ouverts d'une manche à l'autre.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Surtout les grandes villes denses",
+   "Surtout des villes moyennes et villages"
+  ]
+ },
+ {
+  "id": "V06",
+  "theme": "Villes, cartes et rotation",
+  "question": "En plus des villes, veux-tu d'autres lieux de combat dans la rotation ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Oui, sites militaires + usines et port — Usines, port, carrière en plus : le plus de variété, mais davantage de lieux à préparer.",
+  "effort": "moyen",
+  "note_tech": "Le mode Capture & Hold du jeu utilise déjà base militaire, usine et château comme arènes.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Non, que des villes et villages",
+   "Oui, quelques sites militaires"
+  ]
+ },
+ {
+  "id": "V07",
+  "theme": "Villes, cartes et rotation",
+  "question": "Les très grandes villes (ex. Saint-Philippe) peuvent-elles être découpées en plusieurs zones de manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, 2 ou 3 quartiers fixes par grande ville — Ex. « Saint-Philippe Port » et « Saint-Philippe Centre » : plus de manches différentes sans changer d'île.",
+  "effort": "simple",
+  "note_tech": "Un centre et une taille notés à la main pour chaque quartier.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, une ville = une zone",
+   "Oui, un quartier au hasard à chaque passage"
+  ]
+ },
+ {
+  "id": "V08",
+  "theme": "Villes, cartes et rotation",
+  "question": "Faut-il retoucher certaines villes pour éviter les postes trop avantageux (clochers, châteaux d'eau) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, les villes restent telles quelles — Aucune retouche : à chacun de trouver les bons spots et de les contrer.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, bloquer les pires points de tir",
+   "Oui, bloquer + ajouter des abris"
+  ]
+ },
+ {
+  "id": "V09",
+  "theme": "Villes, cartes et rotation",
+  "question": "La taille de la zone de jeu change-t-elle selon le nombre de joueurs connectés ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Deux tailles : petite et grande — Petite zone sous un certain nombre de joueurs, grande au-dessus, choisie au début de la manche.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Taille fixe pour chaque ville",
+   "Taille calculée selon les joueurs"
+  ]
+ },
+ {
+  "id": "V10",
+  "theme": "Villes, cartes et rotation",
+  "question": "Pour une manche à environ 20 joueurs, quelle taille de zone te semble bonne ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Environ 300 m d'un bord à l'autre — Très serré : on croise quelqu'un toutes les 10 à 20 secondes, rythme CoD pur.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Environ 500 m d'un bord à l'autre",
+   "Environ 800 m d'un bord à l'autre"
+  ]
+ },
+ {
+  "id": "V11",
+  "theme": "Villes, cartes et rotation",
+  "question": "Quelle forme pour la zone de jeu ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Un cercle autour du centre — Simple à comprendre et à afficher sur la carte : un rond, on reste dedans.",
+  "effort": "simple",
+  "note_tech": "Le jeu a déjà une zone ronde qui prévient puis tue (zones du Game Master).",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Un carré ou un rectangle",
+   "Une forme dessinée sur mesure"
+  ]
+ },
+ {
+  "id": "V12",
+  "theme": "Villes, cartes et rotation",
+  "question": "La zone de jeu bouge-t-elle pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, fixe du début à la fin — Comme une carte de CoD : les limites ne changent pas, on apprend les bons coins.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Elle rétrécit dans les 3 dernières minutes",
+   "Elle se déplace par étapes"
+  ]
+ },
+ {
+  "id": "V13",
+  "theme": "Villes, cartes et rotation",
+  "question": "Que se passe-t-il quand un joueur sort de la zone ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Alerte puis mort après un compte à rebours — Message rouge et quelques secondes pour revenir, sinon il meurt, comme dans CoD.",
+  "effort": "simple",
+  "note_tech": "Le jeu tue déjà à la sortie des zones du Game Master ; on ajoute le compte à rebours.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Il perd de la vie tant qu'il est dehors",
+   "Il est replacé automatiquement dans la zone"
+  ]
+ },
+ {
+  "id": "V14",
+  "theme": "Villes, cartes et rotation",
+  "question": "Combien de temps un joueur sorti de la zone a-t-il pour revenir ?",
+  "aide": "Seulement si la sortie de zone mène à la mort ou à des dégâts.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "10 secondes — Le temps de faire demi-tour en courant ; la valeur habituelle dans les FPS.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "5 secondes",
+   "20 secondes"
+  ]
+ },
+ {
+  "id": "V15",
+  "theme": "Villes, cartes et rotation",
+  "question": "Comment prévenir un joueur qu'il approche du bord de la zone ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Un avertissement à l'écran près du bord — Un petit message avec la distance au bord apparaît à moins de 50 m de la limite.",
+  "effort": "simple",
+  "note_tech": "Le jeu a déjà cet avertissement (zones du Game Master) ; on ajoute la distance.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Rien avant de sortir",
+   "Un mur rouge transparent sur la limite"
+  ]
+ },
+ {
+  "id": "V16",
+  "theme": "Villes, cartes et rotation",
+  "question": "Dans quel ordre les villes s'enchaînent-elles ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Vote des joueurs en fin de manche — Les joueurs choisissent la prochaine ville parmi quelques propositions pendant la pause.",
+  "effort": "gros",
+  "note_tech": "Le jeu de base n'a qu'un vote oui/non : écran de vote à plusieurs choix à créer.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Liste fixe, toujours le même ordre",
+   "Au hasard, sans répétition proche"
+  ]
+ },
+ {
+  "id": "V17",
+  "theme": "Villes, cartes et rotation",
+  "question": "Que propose le vote de la ville suivante ?",
+  "aide": "Seulement si tu choisis le vote des joueurs.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "3 villes tirées au hasard — Trois choix différents à chaque fois, sans les dernières villes jouées ; en cas d'égalité, tirage au sort.",
+  "effort": "simple",
+  "note_tech": "Simple une fois l'écran de vote fait.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "2 villes + « Surprise »",
+   "3 villes + « Rejouer la même »"
+  ]
+ },
+ {
+  "id": "V18",
+  "theme": "Villes, cartes et rotation",
+  "question": "La ville choisie doit-elle tenir compte du nombre de joueurs connectés ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, chaque ville a un minimum et un maximum — Les grandes villes ne sortent qu'avec assez de monde, les petites seulement quand il y a peu de monde.",
+  "effort": "simple",
+  "note_tech": "Un minimum et un maximum de joueurs à noter pour chaque ville.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, toutes les villes peuvent tomber",
+   "Oui, seulement pour les plus grandes villes"
+  ]
+ },
+ {
+  "id": "V19",
+  "theme": "Villes, cartes et rotation",
+  "question": "Toi et ton staff, que pouvez-vous faire sur la rotation pendant que le serveur tourne ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Rien, rotation 100 % automatique — Tout se règle dans un fichier de réglages du serveur, pris en compte au prochain redémarrage.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Forcer la prochaine ville ou passer la manche",
+   "Forcer + retirer une ville sans redémarrer"
+  ]
+ },
+ {
+  "id": "V21",
+  "theme": "Villes, cartes et rotation",
+  "question": "Quelle météo pour les manches ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Au hasard parmi des météos jouables — Soleil, nuages, pluie légère… mais jamais de brouillard épais ni d'orage qui cache tout.",
+  "effort": "simple",
+  "note_tech": "Le jeu a 4 météos : dégagé, nuageux, couvert, pluie ; le brouillard se règle à part.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Toujours beau temps",
+   "Une météo choisie pour chaque ville"
+  ]
+ },
+ {
+  "id": "V22",
+  "theme": "Villes, cartes et rotation",
+  "question": "À quelle heure de la journée se jouent les manches de jour ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Heure au hasard, du matin au soir — La lumière change d'une manche à l'autre (matin, midi, fin de journée), toujours de jour.",
+  "effort": "simple",
+  "note_tech": "L'heure peut être figée pendant la manche pour que la lumière ne change pas.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Toujours en plein jour, vers midi",
+   "Heure fixée pour chaque ville"
+  ]
+ },
+ {
+  "id": "V23",
+  "theme": "Villes, cartes et rotation",
+  "question": "Veux-tu des manches de nuit, et de quel genre ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Parfois, en nuit claire de pleine lune — Environ 1 manche sur 6 : ambiance de nuit, mais on voit encore assez sans lampe pour se battre.",
+  "effort": "simple",
+  "note_tech": "On règle une date de pleine lune, le jeu place la lune tout seul.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Jamais de nuit",
+   "Parfois, en vraie nuit noire"
+  ]
+ },
+ {
+  "id": "V25",
+  "theme": "Villes, cartes et rotation",
+  "question": "Comment les joueurs s'orientent-ils (carte, boussole, montre) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Seulement avec ce qu'ils prennent à l'arsenal — Liberté totale : celui qui ne prend ni carte ni boussole joue sans.",
+  "effort": "simple",
+  "note_tech": "Sans carte dans l'inventaire, la touche M ne fait rien : règle du jeu de base.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Carte et boussole données d'office",
+   "Bande de boussole en haut de l'écran"
+  ]
+ },
+ {
+  "id": "P01",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Comment on compte le score pendant une manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Les deux : kills et points affichés côte à côte — Tu vois ton nombre de kills et ton total de points avec bonus. Une autre question décide lequel des deux fait gagner.",
+  "effort": "moyen",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Kills seulement : 1 kill = 1 point",
+   "Points avec bonus façon CoD (+100 par kill)"
+  ]
+ },
+ {
+  "id": "P02",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Qui gagne la manche au bout des 15 minutes ?",
+  "aide": "Si le score ne compte que les kills, les deux premiers choix reviennent au même.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Celui qui a le plus de kills — Simple et incontestable : le plus gros chasseur gagne, peu importe comment il a tué.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Celui qui a le plus de points (bonus compris)",
+   "Celui qui a le meilleur ratio kills/morts"
+  ]
+ },
+ {
+  "id": "P03",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "La manche peut-elle se finir avant les 15 minutes si quelqu'un atteint un score limite ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, toujours 15 minutes pleines — La manche dure 15 min quoi qu'il arrive. La rotation des villes reste parfaitement régulière.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, limite fixe (ex. premier à 30 kills)",
+   "Oui, limite qui grandit avec le nombre de joueurs"
+  ]
+ },
+ {
+  "id": "P04",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Combien de vrais joueurs faut-il pour qu'une manche démarre et compte au classement ?",
+  "aide": "Tant que le minimum n'est pas atteint, le serveur reste en échauffement.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "1 seul, les bots complètent — Dès qu'un joueur arrive, la manche démarre avec des bots. Personne n'attend jamais.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "2 vrais joueurs minimum",
+   "4 vrais joueurs minimum"
+  ]
+ },
+ {
+  "id": "P05",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Veux-tu un échauffement quand le serveur démarre (ou redémarre) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, la 1re manche démarre direct — Dès que le minimum de joueurs est là, le chrono de 15 min part. Les premiers arrivés jouent tout de suite.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, 2 minutes où les kills ne comptent pas",
+   "Oui, 5 minutes pour laisser le temps de s'équiper"
+  ]
+ },
+ {
+  "id": "P06",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Quand le chrono tombe à zéro, que se passe-t-il pour ceux qui sont en plein combat ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Arrêt net : plus personne ne peut mourir — À 0:00, tout le monde devient invincible, plus rien ne compte, et l'écran de fin s'affiche aussitôt.",
+  "effort": "simple",
+  "note_tech": "Même invincibilité que dans le menu F10 de SimpleRP (SRP_Admin).",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "3 secondes de grâce pour les derniers tirs",
+   "On continue à se tirer dessus pour le fun"
+  ]
+ },
+ {
+  "id": "P07",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Combien de temps entre la fin d'une manche et le début de la suivante ?",
+  "aide": "Cette pause couvre l'écran de fin et le passage à la ville suivante.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "30 secondes — Le temps de lire le podium, de féliciter le gagnant dans le chat et de souffler.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "15 secondes",
+   "60 secondes"
+  ]
+ },
+ {
+  "id": "P08",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Mourir fait-il perdre des points ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non, mais le ratio kills/morts est affiché partout — Pas de pénalité au score, mais ton ratio apparaît au tableau des scores et sur l'écran de fin.",
+  "effort": "simple",
+  "note_tech": "Le tableau du jeu de base montre kills et morts, pas le ratio : colonne à ajouter.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, mourir ne coûte rien",
+   "Oui, une petite pénalité par mort"
+  ]
+ },
+ {
+  "id": "PN05",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Tu quittes le serveur et reviens pendant la même manche : que devient ton score de la manche ?",
+  "aide": "Couvre aussi les plantages du jeu et les coupures internet.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Conservé si tu reviens en moins de 5 min — Au-delà de 5 minutes d'absence, ton score de la manche est effacé.",
+  "effort": "simple",
+  "note_tech": "Protège des plantages sans garder les absents au classement.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Remis à zéro",
+   "Conservé jusqu'à la fin de la manche"
+  ]
+ },
+ {
+  "id": "P09",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "En cas d'égalité pour la 1re place, qui gagne ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Celui qui a le moins de morts — Si c'est encore égal, celui qui a atteint ce score en premier l'emporte.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Celui qui a atteint ce score en premier",
+   "Les deux sont co-vainqueurs"
+  ]
+ },
+ {
+  "id": "P10",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que se passe-t-il au score si tu meurs tout seul (chute, noyade, ta propre grenade) ?",
+  "aide": "Seulement quand aucun ennemi ne t'a touché juste avant.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Ça compte juste comme une mort — Pas de pénalité en plus, mais ta mort s'ajoute au compteur et ta série s'arrête.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Pénalité : -1 kill (ou -100 points)",
+   "Ça ne compte pas du tout"
+  ]
+ },
+ {
+  "id": "P11",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Si tu meurs tout seul juste après avoir été touché par quelqu'un, le kill lui revient-il ?",
+  "aide": "Ex. tu sautes d'un toit ou tu te fais sauter pour ne pas lui donner le kill.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, jusqu'à 30 secondes après le dernier coup — Couvre aussi les fuites longues : tu te caches blessé puis tu meurs bêtement, il marque quand même.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, s'il t'a touché dans les 10 dernières secondes",
+   "Non, seul le coup qui tue compte"
+  ]
+ },
+ {
+  "id": "PN06",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Un joueur blessé quitte le serveur pour éviter de mourir : que fait-on ?",
+  "aide": "Complète la règle du kill accordé après une mort tout seul.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Mort pour lui, kill pour le dernier tireur — S'il avait été touché dans les 10 dernières secondes, le kill est accordé au tireur.",
+  "effort": "simple",
+  "note_tech": "Même logique que la mort tout seul juste après un tir.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Rien, il part sans conséquence",
+   "Mort, kill et note dans le journal du staff"
+  ]
+ },
+ {
+  "id": "P12",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Combien rapporte un kill sur un bot ?",
+  "aide": "Seulement si les IA sont activées.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Autant qu'un vrai joueur — Un bot tué = un kill complet. Simple, et utile quand il y a peu de monde sur le serveur.",
+  "effort": "simple",
+  "note_tech": "Le jeu ne compte que les joueurs tués : bots comptés par le mod, chacun seul dans son groupe.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Moitié moins qu'un vrai joueur",
+   "Compte pour les points, pas pour la victoire"
+  ]
+ },
+ {
+  "id": "P13",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Un headshot rapporte-t-il un bonus ?",
+  "aide": "Seulement si le score à points existe.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Petit bonus : +50 points — Le kill vaut 150 au lieu de 100. Récompense la précision sans tout écraser.",
+  "effort": "simple",
+  "note_tech": "Le jeu garde la zone touchée par le coup fatal : headshot facile à repérer.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Gros bonus : +100 points (le kill vaut double)",
+   "Aucun bonus, juste une icône tête"
+  ]
+ },
+ {
+  "id": "P14",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Un kill de loin rapporte-t-il un bonus ?",
+  "aide": "Seulement si le score à points existe.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Bonus fixe au-delà de 150 m — +50 points pour tout kill à plus de 150 m. Simple à retenir.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Bonus par paliers : 100 m, 200 m, 300 m et plus",
+   "Aucun bonus de distance"
+  ]
+ },
+ {
+  "id": "P15",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Veux-tu des assistances (tu blesses un joueur, un autre l'achève) ?",
+  "aide": "Seulement si le score à points existe.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, +50 points si tu l'as touché dans les 10 s — N'importe quel dégât suffit. Tu es récompensé même si on te « vole » le kill.",
+  "effort": "simple",
+  "note_tech": "On retient qui a touché chaque joueur et quand (même suivi que pour les suicides).",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, si tu as fait au moins la moitié des dégâts",
+   "Non, pas d'assistances"
+  ]
+ },
+ {
+  "id": "P16",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Veux-tu des bonus pour les kills spéciaux façon CoD (premier sang, vengeance, double kill, kill au couteau) ?",
+  "aide": "Premier sang, vengeance (tuer celui qui t'a tué), double ou triple kill en quelques secondes. Seulement si le score à points existe.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non, un kill vaut un kill — Pas de bonus spéciaux : le score reste simple et facile à suivre.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, tous",
+   "Seulement les double et triple kills"
+  ]
+ },
+ {
+  "id": "P17",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Tuer un joueur qui domine la manche rapporte-t-il une prime ?",
+  "aide": "Seulement si le score à points existe.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, prime sur le 1er du classement — Qui abat le leader gagne un bonus (ex. +100). Tout le monde a une raison de le traquer.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, prime sur tout joueur en série de 5 kills ou plus",
+   "Non, pas de prime"
+  ]
+ },
+ {
+  "id": "P18",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que gagnes-tu en enchaînant les kills sans mourir (série) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Bonus perso : soin complet et munitions pleines — À certains paliers, tu es soigné et tes chargeurs sont remplis. Tu restes battable.",
+  "effort": "moyen",
+  "note_tech": "Le soin complet existe dans le jeu ; remplir les chargeurs de n'importe quelle arme est à écrire.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Rien en jeu : annonce et points seulement",
+   "Bonus tactique : ennemis proches signalés à l'écran"
+  ]
+ },
+ {
+  "id": "P19",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "À combien de kills sans mourir se déclenchent les récompenses de série ?",
+  "aide": "Seulement si les séries donnent quelque chose.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "3, 5 et 10 kills — Paliers courts : même un joueur moyen touche une récompense de temps en temps.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "5, 10 et 15 kills",
+   "Tous les 5 kills, sans limite"
+  ]
+ },
+ {
+  "id": "P20",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que montre l'écran de fin de manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Podium + médailles de la manche — En plus du top 3 : plus long tir, plus de headshots, plus longue série, plus de morts...",
+  "effort": "gros",
+  "note_tech": "Écran maison, plus le suivi de chaque stat (tirs, headshots, séries) pendant la manche.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Podium des 3 premiers + tableau complet",
+   "Tableau des scores simple"
+  ]
+ },
+ {
+  "id": "P21",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que veux-tu voir en permanence à l'écran pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Chrono, ton score, ton rang et le score du 1er — Ex. « 12:34 · 8 kills · 3e/24 · 1er : 11 ». Tu sais toujours où tu en es.",
+  "effort": "moyen",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Seulement le chrono et ton score",
+   "Rien en permanence, tout sur une touche"
+  ]
+ },
+ {
+  "id": "P22",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que montre le tableau des scores quand tu appuies sur la touche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Rang, nom, kills, morts, ratio et points — L'essentiel pour chaque joueur, lisible d'un coup d'œil même à 40 joueurs.",
+  "effort": "moyen",
+  "note_tech": "Le tableau du jeu de base a kills, morts et score, mais ni ratio ni bots.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Tout : + headshots, meilleure série, assistances, ping",
+   "Juste rang, nom et kills"
+  ]
+ },
+ {
+  "id": "P23",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que montre le fil des éliminations (kill feed) en haut de l'écran ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Classique : tueur, arme, victime (+ icône headshot) — Visible par tous, façon CoD. On sait qui tue qui et avec quoi.",
+  "effort": "moyen",
+  "note_tech": "Le fil du jeu de base dit « X a tué Y », sans arme ni bots : fil maison.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Détaillé : même chose + distance du tir",
+   "Personnel : seulement tes kills et ta mort"
+  ]
+ },
+ {
+  "id": "P24",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Que se passe-t-il à l'écran quand TU tues quelqu'un ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Popup façon CoD + son de confirmation — Au centre : « +100 Élimination », « +50 Headshot », avec un petit son satisfaisant.",
+  "effort": "moyen",
+  "note_tech": "Le bandeau du jeu de base (avec son) peut servir de première version.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Petit texte discret avec la distance",
+   "Seulement un son de confirmation"
+  ]
+ },
+ {
+  "id": "P25",
+  "theme": "Déroulement d’une partie et scores",
+  "question": "Comment sont annoncés les moments forts (séries, nouveau leader, 1 minute restante) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Bandeaux texte à l'écran pour tous — Ex. « Jack est en série de 5 ! » ou « 1 minute restante » en haut de l'écran.",
+  "effort": "simple",
+  "note_tech": "Bandeau du jeu de base. Le jeu n'a pas le turc : textes en anglais pour eux, sauf choix maison.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Bandeaux + voix d'annonceur en anglais",
+   "Seulement ce qui te concerne"
+  ]
+ },
+ {
+  "id": "C01",
+  "theme": "Combat et règles de jeu",
+  "question": "Quel système de blessures veux-tu pour les combats ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Blessures du jeu de base — Dégâts par zone du corps, bandages, garrots et morphine du jeu. Rien à télécharger en plus, tout le monde connaît.",
+  "effort": "simple",
+  "note_tech": "Rien à coder : les réglages des questions suivantes passent par les options du jeu.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "ACE Medical (mod)",
+   "Blessures simplifiées façon CoD"
+  ]
+ },
+ {
+  "id": "C02",
+  "theme": "Combat et règles de jeu",
+  "question": "En ville, quelle vue autorises-tu : première personne, troisième personne, ou un mélange ?",
+  "aide": "Le lobby peut rester en vue libre quel que soit ton choix.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Première personne forcée — Tout le monde voit par les yeux du soldat. Impossible de regarder derrière un mur sans se montrer.",
+  "effort": "simple",
+  "note_tech": "Option serveur du jeu ; garder le lobby en vue libre demande juste quelques lignes.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Troisième personne libre",
+   "1re à pied, 3e seulement en véhicule"
+  ]
+ },
+ {
+  "id": "C03",
+  "theme": "Combat et règles de jeu",
+  "question": "Les balles font-elles autant de dégâts que dans le jeu de base ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Dégâts du jeu de base — Une à trois balles de fusil suffisent selon l'endroit touché. Celui qui tire le premier gagne presque toujours.",
+  "effort": "simple",
+  "note_tech": "Rien à coder.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Dégâts un peu réduits",
+   "Dégâts augmentés"
+  ]
+ },
+ {
+  "id": "CN07",
+  "theme": "Combat et règles de jeu",
+  "question": "Quand tu vises, l'arme bouge-t-elle autant que dans le jeu de base (balancement, recul) ?",
+  "aide": "C'est ce qui rapproche le plus les sensations de Call of Duty.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Comme le jeu de base — Sensations Arma : il faut se poser ou s'appuyer pour être précis.",
+  "effort": "simple",
+  "note_tech": "Aucun travail.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Balancement réduit, recul inchangé",
+   "Balancement et recul très réduits"
+  ]
+ },
+ {
+  "id": "C04",
+  "theme": "Combat et règles de jeu",
+  "question": "L'arsenal est libre : comment doivent protéger les casques et gilets pare-balles ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Protection réduite — Gilets et casques protègent un peu, l'écart avec un joueur en tenue légère reste faible. Plus équitable.",
+  "effort": "simple",
+  "note_tech": "La protection de chaque tenue est réduite par un coefficient, réglable après essais.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Protection du jeu de base",
+   "Aucune protection"
+  ]
+ },
+ {
+  "id": "C05",
+  "theme": "Combat et règles de jeu",
+  "question": "Après une grosse blessure, un joueur peut-il tomber inconscient au lieu de mourir ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, mort directe — Tu es debout ou mort, jamais au sol à attendre. Le kill est compté tout de suite.",
+  "effort": "simple",
+  "note_tech": "Option du jeu de base (inconscience interdite).",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, quelques secondes puis mort",
+   "Oui, et tu peux te relever seul"
+  ]
+ },
+ {
+  "id": "C06",
+  "theme": "Combat et règles de jeu",
+  "question": "Après une blessure, est-ce que tu continues à perdre de la vie en saignant ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Saignement lent — Tu saignes doucement : tu as le temps de finir ton combat, puis de te soigner à l'abri.",
+  "effort": "simple",
+  "note_tech": "Même réglage du jeu, vitesse réduite (par exemple de moitié), à ajuster en jeu.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Pas de saignement",
+   "Saignement du jeu de base"
+  ]
+ },
+ {
+  "id": "C07",
+  "theme": "Combat et règles de jeu",
+  "question": "Comment un joueur blessé se soigne-t-il en pleine manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Objets médicaux du jeu — Bandages, garrots, morphine pris à l'arsenal, avec les gestes normaux du jeu (un bandage par blessure).",
+  "effort": "simple",
+  "note_tech": "Le jeu de base, rien à faire.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Soin rapide par touche",
+   "Pas de soin en combat"
+  ]
+ },
+ {
+  "id": "C08",
+  "theme": "Combat et règles de jeu",
+  "question": "La vie remonte-t-elle toute seule quand tu ne prends plus de dégâts, comme dans CoD ?",
+  "aide": "Info : le jeu de base fait déjà remonter la vie, lentement, après 10 s sans dégâts ni saignement.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Pas de régénération — Ta vie ne revient qu'en te soignant ou en réapparaissant. Chaque blessure compte jusqu'au bout.",
+  "effort": "simple",
+  "note_tech": "On coupe la régénération du jeu de base (un réglage).",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Régénération partielle",
+   "Régénération complète façon CoD"
+  ]
+ },
+ {
+  "id": "C09",
+  "theme": "Combat et règles de jeu",
+  "question": "Tuer quelqu'un doit-il te rendre de la vie ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, rien — Un kill ne change rien à ta santé : tu te débrouilles avec ce qu'il te reste.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, un peu de vie",
+   "Oui, soin complet"
+  ]
+ },
+ {
+  "id": "C11",
+  "theme": "Combat et règles de jeu",
+  "question": "Y a-t-il des véhicules utilisables dans la ville pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Aucun véhicule — Tout se joue à pied. Les voitures garées dans les rues ne servent que de couvert.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Quelques véhicules civils",
+   "Civils + véhicules armés"
+  ]
+ },
+ {
+  "id": "C12",
+  "theme": "Combat et règles de jeu",
+  "question": "Que deviennent les véhicules détruits pendant la manche ?",
+  "aide": "Seulement si des véhicules sont présents en ville.",
+  "type": "conseil",
+  "choix_index": 1,
+  "decision": "Réapparaissent après quelques minutes — Un véhicule détruit ou abandonné revient à sa place au bout de 3 à 5 minutes.",
+  "effort": "moyen",
+  "note_tech": "Le jeu sait faire réapparaître un véhicule ; repérer un véhicule « abandonné » demande un peu de code.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Perdus jusqu'à la manche suivante",
+   "Indestructibles"
+  ]
+ },
+ {
+  "id": "C13",
+  "theme": "Combat et règles de jeu",
+  "question": "Veux-tu des armes fixes (mitrailleuses sur trépied, mortiers) dans la ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Aucune — Seulement les armes portées par les joueurs. Personne ne s'installe derrière une mitrailleuse.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Quelques mitrailleuses fixes",
+   "Mitrailleuses et mortiers"
+  ]
+ },
+ {
+  "id": "C14",
+  "theme": "Combat et règles de jeu",
+  "question": "Comment les joueurs se parlent-ils à la voix pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Voix de proximité du jeu — Tu entends les joueurs proches de toi, ennemis compris, à la portée normale du jeu.",
+  "effort": "simple",
+  "note_tech": "Le jeu de base, rien à faire.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Proximité avec 3 portées (SimpleRP)",
+   "Pas de voix en ville"
+  ]
+ },
+ {
+  "id": "C15",
+  "theme": "Combat et règles de jeu",
+  "question": "Les radios doivent-elles fonctionner pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Pas de radio — Radios désactivées : pas d'équipe, donc pas de communication à distance.",
+  "effort": "simple",
+  "note_tech": "On bloque l'émission radio en ville : les radios restent à l'arsenal, qui reste libre.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Radio libre",
+   "Une fréquence commune"
+  ]
+ },
+ {
+  "id": "C16",
+  "theme": "Combat et règles de jeu",
+  "question": "Quel chat écrit pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Chat global seul — Tout le serveur lit tous les messages. Simple, et pratique avec des joueurs de plusieurs langues.",
+  "effort": "simple",
+  "note_tech": "Cacher les canaux Faction et Groupe du jeu : avec une seule faction, ils touchent tout le monde.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Global + chat de proximité",
+   "Chat seulement au lobby"
+  ]
+ },
+ {
+  "id": "CN08",
+  "theme": "Combat et règles de jeu",
+  "question": "Faut-il filtrer les insultes dans le chat écrit ?",
+  "aide": "Avec 4 langues sur le serveur, le staff ne peut pas tout lire.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, les mots sont remplacés par des *** — Une liste d'insultes en FR, EN, TR et CN est masquée automatiquement.",
+  "effort": "moyen",
+  "note_tech": "Liste de mots à tenir à jour.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, le staff gère à la main",
+   "Oui, masqués + muet 5 min après 3 insultes"
+  ]
+ },
+ {
+  "id": "C17",
+  "theme": "Combat et règles de jeu",
+  "question": "Deux joueurs qui s'allient pour tuer les autres en FFA : que fais-tu ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Toléré — Pas de règle : chacun joue comme il veut, même à deux.",
+  "effort": "simple",
+  "note_tech": "Le FFA vient d'une faction unique réglée hostile à elle-même (option prévue par le jeu), IA comprises.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Interdit par le règlement",
+   "Interdit + alerte automatique"
+  ]
+ },
+ {
+  "id": "C18",
+  "theme": "Combat et règles de jeu",
+  "question": "Que faire contre les joueurs qui restent immobiles dans un coin toute la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Rien — Camper fait partie du jeu : à chacun d'aller débusquer les campeurs.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Position révélée",
+   "Avertissement puis dégâts"
+  ]
+ },
+ {
+  "id": "C19",
+  "theme": "Combat et règles de jeu",
+  "question": "Que fais-tu des portes des bâtiments en ville ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Toutes rouvertes à chaque manche — Au début de chaque manche, toutes les portes de la ville sont ouvertes. On peut ensuite les fermer.",
+  "effort": "moyen",
+  "note_tech": "Le serveur ouvre les portes de la ville au lancement de la manche, par petits paquets pour éviter le lag.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Normales",
+   "Brèche à l'explosif (SimpleRP)"
+  ]
+ },
+ {
+  "id": "C21",
+  "theme": "Combat et règles de jeu",
+  "question": "Les mines et charges explosives posées au sol : que fais-tu ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Autorisées, retirées à ta mort — Tes pièges disparaissent quand tu meurs : pas de ville truffée de mines oubliées.",
+  "effort": "moyen",
+  "note_tech": "Le serveur retient qui a posé chaque mine ou charge, puis les retire à sa mort.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Autorisées comme dans le jeu",
+   "Interdites pendant la manche"
+  ]
+ },
+ {
+  "id": "C22",
+  "theme": "Combat et règles de jeu",
+  "question": "Le nom des autres joueurs s'affiche-t-il au-dessus de leur tête ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Jamais — Aucun nom à l'écran : tu sais qui c'était seulement quand il meurt ou te tue.",
+  "effort": "simple",
+  "note_tech": "Le jeu n'affiche que les noms des alliés : en FFA, rien ne s'affiche déjà.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "En rouge quand tu le vises",
+   "Toujours, à courte distance"
+  ]
+ },
+ {
+  "id": "C23",
+  "theme": "Combat et règles de jeu",
+  "question": "Qu'est-ce qui apparaît sur la carte (touche M) pendant la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Toi + tirs ennemis — En plus de toi, un point rouge apparaît quelques secondes là où quelqu'un tire sans silencieux.",
+  "effort": "gros",
+  "note_tech": "Le serveur repère chaque tir sans silencieux et envoie le point à tous : plusieurs jours de travail.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Rien, même pas toi",
+   "Ta propre position"
+  ]
+ },
+ {
+  "id": "CN09",
+  "theme": "Combat et règles de jeu",
+  "question": "Peut-on poser ses propres marqueurs sur la carte (touche M) pendant la manche ?",
+  "aide": "Dans le jeu de base, d'autres joueurs peuvent voir les marqueurs que tu poses.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, marqueurs désactivés — La carte sert seulement à regarder.",
+  "effort": "simple",
+  "note_tech": "Aucune fuite d'information possible.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, visibles par toi seul",
+   "Oui, visibles par tout le monde"
+  ]
+ },
+ {
+  "id": "C24",
+  "theme": "Combat et règles de jeu",
+  "question": "Veux-tu un point de visée à l'écran quand tu tires sans viser (à la hanche) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Aucun — Comme dans Arma : pour être précis, il faut viser avec le guidon ou la lunette.",
+  "effort": "simple",
+  "note_tech": "Le jeu de base, rien à faire.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Petit point fixe au centre",
+   "Point qui suit le canon"
+  ]
+ },
+ {
+  "id": "CN10",
+  "theme": "Combat et règles de jeu",
+  "question": "Veux-tu voir tes munitions et ta vie en permanence à l'écran, comme dans CoD ?",
+  "aide": "Le jeu de base n'affiche presque rien : il faut vérifier ses chargeurs à la main.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, comme le jeu de base — Tu vérifies tes chargeurs et ton état toi-même.",
+  "effort": "simple",
+  "note_tech": "Aucun travail, esprit Arma.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Munitions restantes toujours affichées",
+   "Munitions + barre de vie"
+  ]
+ },
+ {
+  "id": "C25",
+  "theme": "Combat et règles de jeu",
+  "question": "Quand ta balle touche quelqu'un, veux-tu un signal à l'écran (hit marker) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Croix, son, et croix rouge au kill — Comme le choix d'avant, plus une croix rouge et un son différent quand ta balle tue.",
+  "effort": "moyen",
+  "note_tech": "Même système, avec un signal différent quand la balle tue.",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Aucun signal",
+   "Croix + petit son"
+  ]
+ },
+ {
+  "id": "CN11",
+  "theme": "Combat et règles de jeu",
+  "question": "Quand on te tire dessus, l'écran montre-t-il d'où vient le tir ?",
+  "aide": "Indicateur de dégâts, comme dans la plupart des FPS arcade.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, tu te fies au son — Comme dans Arma : bruit des tirs et des impacts seulement.",
+  "effort": "simple",
+  "note_tech": "Aucun travail.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, un arc rouge pointé vers le tireur",
+   "Oui, juste le côté touché"
+  ]
+ },
+ {
+  "id": "I01",
+  "theme": "IA (bots)",
+  "question": "Quelle IA pour les bots : celle du jeu de base, ou le mod CRX Enfusion A.I. que tu utilises déjà dans SimpleRP ?",
+  "aide": "Chaque mod en plus, c'est un téléchargement en plus pour les joueurs qui rejoignent le serveur.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Le mod CRX Enfusion A.I. — Bots plus vifs en ville (couverture, tir, ils reprennent des munitions sur les corps). Un mod de plus à télécharger, mais tu le maîtrises déjà.",
+  "effort": "simple",
+  "note_tech": "SimpleRP en dépend déjà (SRP_CRX.c) : réglages et pièges connus.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "L'IA du jeu de base, telle quelle",
+   "L'IA de base + tes réglages de SimpleRP"
+  ]
+ },
+ {
+  "id": "I02",
+  "theme": "IA (bots)",
+  "question": "Les bots se tirent-ils dessus entre eux ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, chacun pour soi — Vrai FFA : un bot tire sur tout le monde, bots compris. La ville bouge même quand tu es seul.",
+  "effort": "simple",
+  "note_tech": "Un camp hostile à lui-même (option prévue par le jeu pour le deathmatch) et un groupe par bot.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, ils sont tous contre les joueurs",
+   "Oui, mais ils visent d'abord les joueurs"
+  ]
+ },
+ {
+  "id": "I03",
+  "theme": "IA (bots)",
+  "question": "Comment calculer le nombre de bots ? Ex. : compléter jusqu'à 12 au total, 6 bots fixes sous 8 joueurs, ou par paliers.",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Par paliers — Ex. 10 bots de 1 à 3 joueurs, 6 de 4 à 7, 3 de 8 à 11, aucun au-delà.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Compléter jusqu'à un total fixe",
+   "Nombre fixe sous un seuil"
+  ]
+ },
+ {
+  "id": "I04",
+  "theme": "IA (bots)",
+  "question": "À partir de combien de vrais joueurs il n'y a plus aucun bot dans la partie ?",
+  "aide": "Si les bots complètent jusqu'à un total, c'est ce total.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "12 joueurs — Bon rythme pour une ville moyenne ; au-delà, les vrais joueurs suffisent à l'animer.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "8 joueurs",
+   "16 joueurs"
+  ]
+ },
+ {
+  "id": "I05",
+  "theme": "IA (bots)",
+  "question": "Combien de bots au maximum en même temps, même avec un seul joueur connecté ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "10 bots — La ville est vivante même à 1 ou 2 joueurs, sans que tu sois noyé sous les bots.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "6 bots",
+   "15 bots"
+  ]
+ },
+ {
+  "id": "I06",
+  "theme": "IA (bots)",
+  "question": "Quels joueurs comptent pour calculer le nombre de bots ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Tous les connectés — Lobby compris : un joueur encore en train de s'équiper fait déjà partir un bot.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Seulement ceux déployés en ville",
+   "Tous, sauf ceux inactifs depuis 3 min"
+  ]
+ },
+ {
+  "id": "I07",
+  "theme": "IA (bots)",
+  "question": "Quand un vrai joueur arrive et qu'un bot doit laisser sa place, le bot part comment ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "À sa prochaine mort — Le bot finit sa vie normalement et ne réapparaît pas ; personne ne le voit s'évaporer.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Tout de suite",
+   "Dès que personne ne le voit"
+  ]
+ },
+ {
+  "id": "I08",
+  "theme": "IA (bots)",
+  "question": "Quand il n'y a plus aucun vrai joueur sur le serveur, que deviennent les bots ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Tous retirés tout de suite — Le serveur se repose ; les bots reviennent dès qu'un joueur se déploie.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Ils continuent de jouer entre eux",
+   "Retirés après 5 min sans joueur"
+  ]
+ },
+ {
+  "id": "I09",
+  "theme": "IA (bots)",
+  "question": "Si le serveur commence à ramer, que font les bots ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "On n'en ajoute plus — Les bots présents restent, mais aucun nouveau ne vient tant que ça rame.",
+  "effort": "moyen",
+  "note_tech": "Même mesure de fluidité, sans rien retirer : plus sûr.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "On en retire automatiquement",
+   "Rien, tu règles le plafond à la main"
+  ]
+ },
+ {
+  "id": "I10",
+  "theme": "IA (bots)",
+  "question": "Combien de temps avant qu'un bot tué réapparaisse ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Même délai que les joueurs — Mêmes règles pour tous ; le nombre de combattants reste stable.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Plus long (environ 20 s)",
+   "Quasi immédiat"
+  ]
+ },
+ {
+  "id": "I11",
+  "theme": "IA (bots)",
+  "question": "Où réapparaît un bot tué ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Aux mêmes points que les joueurs — Mêmes règles que toi : simple, mais un bot peut réapparaître sous tes yeux.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Loin et hors de vue de tout joueur",
+   "Près des combats en cours, hors de vue"
+  ]
+ },
+ {
+  "id": "I12",
+  "theme": "IA (bots)",
+  "question": "Quel niveau de difficulté pour les bots ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Dur — Réaction et précision proches d'un bon joueur : ils punissent la moindre erreur.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Facile",
+   "Moyen"
+  ]
+ },
+ {
+  "id": "I13",
+  "theme": "IA (bots)",
+  "question": "Que fait un bot quand il n'a personne en vue ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Il va vers les coups de feu — Il marche vers les derniers tirs entendus : il rejoint l'action sans tricher.",
+  "effort": "moyen",
+  "note_tech": "S'appuie sur le signal « tir entendu » du jeu, déjà exploité dans SimpleRP.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Il se promène dans la ville",
+   "Il chasse les joueurs"
+  ]
+ },
+ {
+  "id": "I14",
+  "theme": "IA (bots)",
+  "question": "Un bot peut-il savoir à peu près où tu es sans t'avoir vu ni entendu ?",
+  "aide": "Évite qu'un bot erre seul loin de tout le monde. Inutile si les bots chassent déjà les joueurs.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Une zone vague de temps en temps — Toutes les 1 à 2 min, il reçoit un secteur d'environ 100 m où se trouve quelqu'un, pas ta position exacte.",
+  "effort": "simple",
+  "note_tech": "Juste un point de marche près d'un joueur : il doit encore te trouver lui-même.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Jamais",
+   "Toujours"
+  ]
+ },
+ {
+  "id": "I15",
+  "theme": "IA (bots)",
+  "question": "Les bots entrent-ils dans les bâtiments ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, ils les fouillent — Ils visitent régulièrement maisons et étages : se planquer à l'intérieur n'est jamais sûr.",
+  "effort": "gros",
+  "note_tech": "L'IA du jeu circule mal dedans (portes, escaliers) : bots coincés possibles, beaucoup d'essais.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Seulement pour poursuivre quelqu'un",
+   "Non, ils restent dehors"
+  ]
+ },
+ {
+  "id": "I16",
+  "theme": "IA (bots)",
+  "question": "Certains bots doivent-ils tenir une position au lieu de bouger ?",
+  "aide": "Si les bots restent dehors, ils ne tiennent que des coins de rue.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Environ 1 sur 4, quelques minutes — Un bot sur quatre s'arrête 2 à 3 min dans une maison ou à un coin de rue, puis repart : il faut vérifier les coins.",
+  "effort": "moyen",
+  "note_tech": "Le poster à une fenêtre précise n'est pas fiable : il tient une pièce ou un coin de rue.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, tous bougent",
+   "Environ 1 sur 2"
+  ]
+ },
+ {
+  "id": "I17",
+  "theme": "IA (bots)",
+  "question": "À quelle distance maximum un bot peut-il ouvrir le feu sur toi ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "300 m — Portée réaliste d'Arma : un bot peut te toucher à travers un champ ou depuis un toit.",
+  "effort": "simple",
+  "note_tech": "Même réglage ; le jeu de base, lui, n'a quasiment pas de limite.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "75 m",
+   "150 m"
+  ]
+ },
+ {
+  "id": "I18",
+  "theme": "IA (bots)",
+  "question": "Un bot doit-il moins bien te voir quand tu es couché, dans un buisson ou dans l'ombre ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Un peu, version simplifiée — Couché ou accroupi, tu es vu moins loin ; pas de calcul de lumière ni de buisson.",
+  "effort": "simple",
+  "note_tech": "On reprend juste tes facteurs de SimpleRP : accroupi 0,7, couché 0,4.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, comme dans SimpleRP",
+   "Non, vue du jeu de base"
+  ]
+ },
+ {
+  "id": "I19",
+  "theme": "IA (bots)",
+  "question": "Les bots peuvent-ils rôder près des points où les joueurs apparaissent ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Oui, librement — Aucune restriction : un bot peut passer devant un point d'apparition au mauvais moment.",
+  "effort": "simple",
+  "note_tech": "Le choix de ton point d'apparition peut déjà écarter ceux où un bot rôde.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Pas à moins de 50 m",
+   "Pas à moins de 100 m"
+  ]
+ },
+ {
+  "id": "I20",
+  "theme": "IA (bots)",
+  "question": "Quelles armes les bots ont-ils le droit d'utiliser ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Tout, comme les joueurs — Même choix que l'arsenal sans limite, lance-roquettes compris.",
+  "effort": "simple",
+  "note_tech": "En général, un bot ne sort le lance-roquettes que contre un véhicule : contre toi, c'est le fusil.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Fusils et mitraillettes, sans grenade",
+   "Toutes les armes à feu + grenades"
+  ]
+ },
+ {
+  "id": "I21",
+  "theme": "IA (bots)",
+  "question": "Comment un bot choisit-il son équipement (tenue, arme, sac) ?",
+  "aide": "Les armes restent limitées par ta réponse sur les armes autorisées aux bots.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Au hasard dans tout l'arsenal — Chaque bot a un mélange au hasard : varié, mais parfois bizarre (tenue de pilote et mitrailleuse).",
+  "effort": "moyen",
+  "note_tech": "Il faut assortir arme, chargeurs et tenue : tri de l'arsenal à faire.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Parmi des panoplies que tu prépares",
+   "Copie de l'équipement d'un vrai joueur"
+  ]
+ },
+ {
+  "id": "I23",
+  "theme": "IA (bots)",
+  "question": "Les bots apparaissent-ils au tableau des scores de la manche ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, mais seul un vrai joueur peut gagner — Classés avec les joueurs, mais le vainqueur annoncé est le meilleur vrai joueur.",
+  "effort": "moyen",
+  "note_tech": "Même tableau à nous ; le vainqueur est pris parmi les vrais joueurs.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, et un bot peut gagner la manche",
+   "Non, invisibles au tableau"
+  ]
+ },
+ {
+  "id": "I24",
+  "theme": "IA (bots)",
+  "question": "Quel nom portent les bots dans le tableau des scores et le fil des kills ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Pseudos réalistes + étiquette [BOT] — Ex. « [BOT] Kurt_TR » : vivant et honnête à la fois.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "BOT 1, BOT 2…",
+   "Faux pseudos réalistes"
+  ]
+ },
+ {
+  "id": "I25",
+  "theme": "IA (bots)",
+  "question": "Où veux-tu pouvoir changer les réglages (bots, délais, points, liste des villes) sans refaire le mod ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Dans un fichier de réglages du serveur — Un fichier sur ton serveur LobbyHost, modifiable sans republier ; pris en compte au redémarrage.",
+  "effort": "simple",
+  "note_tech": "Comme ton discord.json de SimpleRP : un fichier lu au démarrage du serveur.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Dans Workbench seulement",
+   "En jeu, dans un menu staff"
+  ]
+ },
+ {
+  "id": "S01",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Pour la toute première version publique de SimplePVP, tu veux sortir quoi ?",
+  "aide": "La suite arrive par mises à jour : ici on fixe juste ce qui doit être prêt le jour 1.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Le minimum jouable — Lobby, arsenal, déploiement, manches et rotation des villes. Stats, niveaux, site et Discord viendront dans les mises à jour suivantes.",
+  "effort": "gros",
+  "note_tech": "FFA : une seule faction hostile à elle-même (réglage du jeu), sinon les kills comptent comme tirs amis",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Jouable + stats sauvegardées + Discord",
+   "Tout d'un coup"
+  ]
+ },
+ {
+  "id": "SN12",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Veux-tu prévoir dès maintenant d'autres modes de jeu pour plus tard (par équipes, gun game…) ?",
+  "aide": "Change la façon d'organiser le code, pas le contenu du lancement : seul le FFA sort au départ.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, code prêt à accueillir d'autres modes — Seul le FFA existe au lancement, mais score et manches sont séparés pour ajouter un mode facilement.",
+  "effort": "moyen",
+  "note_tech": "Un peu plus de travail au départ, gros gain si tu ajoutes un mode.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, SimplePVP reste en chacun pour soi",
+   "Oui, un serveur multi-modes à terme"
+  ]
+ },
+ {
+  "id": "S02",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Comment tu veux te servir du code de SimpleRP pour SimplePVP ?",
+  "aide": "SimpleRP a déjà le menu staff F10, les bans, le pont Discord, les fiches joueurs sauvegardées, la caméra de mort…",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Tout réécrire de zéro — Rien de repris, tout pensé pour le PvP. Plus propre, mais plus long, et des outils déjà rodés (admin, Discord) sont à refaire et retester.",
+  "effort": "gros",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Copier les morceaux utiles dans un mod neuf",
+   "Mettre SimpleRP en dépendance"
+  ]
+ },
+ {
+  "id": "S03",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Où va tourner le serveur de jeu SimplePVP ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Nouveau serveur LobbyHost dédié — Un 2e serveur qui tourne en permanence à côté de celui de la PAG. Un abonnement de plus, mais aucun impact sur la PAG.",
+  "effort": "simple",
+  "note_tech": "Rien à coder : tu choisis le scénario SimplePVP dans le panneau LobbyHost",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Sur ton VPS",
+   "Partager le serveur PAG"
+  ]
+ },
+ {
+  "id": "SN13",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Les joueurs Xbox et PS5 doivent-ils pouvoir jouer sur SimplePVP ?",
+  "aide": "Sur console, tous les mods chargés doivent être compatibles et tous les menus jouables à la manette.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Oui, PC et consoles dès le lancement — Arsenal, déploiement et vote utilisables à la manette ; mods d'armes choisis parmi ceux compatibles console.",
+  "effort": "moyen",
+  "note_tech": "Limite les mods d'armes possibles et demande des tests à la manette.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, PC uniquement",
+   "PC au lancement, consoles ensuite"
+  ]
+ },
+ {
+  "id": "S04",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Combien de places maximum sur le serveur ?",
+  "aide": "Les IA comblent quand il y a peu de monde ; ici on parle du plafond de joueurs humains.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "32 places — Une ville se remplit vite, action constante, serveur léger. Peut saturer si la communauté grossit.",
+  "effort": "simple",
+  "note_tech": "Simple réglage du fichier serveur, modifiable à tout moment",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "48 places",
+   "64 places"
+  ]
+ },
+ {
+  "id": "SN14",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Faut-il exclure les joueurs qui ont un ping trop élevé (gros lag) ?",
+  "aide": "Les joueurs chinois auront souvent un ping élevé si le serveur est en Europe.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Exclusion au-delà de 250 ms — Seuls les cas extrêmes sont exclus, après un avertissement à l'écran.",
+  "effort": "simple",
+  "note_tech": "Laisse jouer la plupart des joueurs lointains.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Non, jamais d'exclusion pour le ping",
+   "Exclusion au-delà de 150 ms"
+  ]
+ },
+ {
+  "id": "S06",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Comment chaque joueur a-t-il les menus et messages dans sa langue (FR, EN, TR, CN) ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Automatique selon la langue du jeu — Le mod suit la langue choisie dans Arma. Mais Arma n'existe pas en turc : les joueurs turcs auraient l'anglais.",
+  "effort": "moyen",
+  "note_tech": "Arma a 13 langues, dont français, anglais et chinois, mais pas le turc",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Anglais partout au lancement",
+   "Choix manuel par drapeau"
+  ]
+ },
+ {
+  "id": "SN15",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Qui traduit les menus et messages en anglais, turc et chinois ?",
+  "aide": "Tu écris en français ; il faut quelqu'un pour les trois autres langues.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Claude traduit tout — Les 4 langues sont prêtes dès la première version, sans relecture.",
+  "effort": "simple",
+  "note_tech": "Rapide ; quelques tournures peuvent sonner bizarre pour un natif.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Claude traduit, des joueurs natifs relisent",
+   "FR et EN d'abord, TR et CN plus tard"
+  ]
+ },
+ {
+  "id": "S07",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Que deviennent les stats des joueurs (kills, morts, K/D) dans le temps ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Rien après la manche — Scores remis à zéro à chaque manche, aucun historique ni classement. Rien à sauvegarder, rien à surveiller.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Cumulées pour toujours",
+   "À vie + saisons mensuelles"
+  ]
+ },
+ {
+  "id": "S08",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Quelles stats suivre pour chaque joueur ?",
+  "aide": "Seulement si les stats sont gardées d'une manche à l'autre.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "L'essentiel + exploits — En plus : tirs à la tête, plus long kill (distance), meilleure série de kills, arme la plus utilisée.",
+  "effort": "moyen",
+  "note_tech": "Tête : lue sur la dernière blessure ; arme : celle en main du tueur au moment du kill",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "L'essentiel",
+   "Tout en détail"
+  ]
+ },
+ {
+  "id": "S09",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Les kills sur les IA, et les morts causées par les IA, comptent-ils dans les stats sauvegardées et les classements ?",
+  "aide": "Pour le score de la manche en cours, c'est la partie IA qui en décide.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Comptés à part — Colonne « kills IA » visible sur la fiche, mais le classement ne compte que les kills sur de vrais joueurs.",
+  "effort": "simple",
+  "note_tech": "Une IA se reconnaît facilement : aucun joueur derrière le personnage",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, comme un joueur",
+   "Non, jamais"
+  ]
+ },
+ {
+  "id": "S10",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Faut-il une progression (niveaux ou grades) affichée pour chaque joueur ?",
+  "aide": "L'arsenal reste sans restriction : un niveau ne débloque aucune arme.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Niveaux avec XP façon CoD — Kills, séries et manches donnent de l'XP ; le joueur monte de niveau (ex. 1 à 100), affiché à côté de son nom.",
+  "effort": "moyen",
+  "note_tech": "Barème d'XP dans un fichier réglable sans recompiler",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Grades selon le total de kills",
+   "Aucune progression"
+  ]
+ },
+ {
+  "id": "S11",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Qu'est-ce qu'un niveau ou un grade élevé apporte au joueur ?",
+  "aide": "Seulement si tu choisis des niveaux ou des grades.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Prestige + titres et couleurs — Certains paliers débloquent un titre (« Chasseur », « Légende »…) ou une couleur de pseudo dans le chat.",
+  "effort": "moyen",
+  "note_tech": "Couleur dans le chat : il faut retoucher l'affichage du chat du jeu",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Juste le prestige affiché",
+   "Système de prestige façon CoD"
+  ]
+ },
+ {
+  "id": "SN16",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Veux-tu des défis quotidiens (ex. « 10 kills au pistolet ») pour donner des objectifs ?",
+  "aide": "Seulement si les stats sont sauvegardées.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Non, pas de défis — On joue pour le score de la manche et le classement.",
+  "effort": "simple",
+  "note_tech": "Rien à coder, à ajouter plus tard si besoin.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, 3 défis du jour",
+   "Oui, défis du jour et de la semaine"
+  ]
+ },
+ {
+  "id": "S12",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Faut-il une page web avec les stats et les classements ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Pas de site au début — Stats visibles seulement en jeu et sur Discord. Le site viendra plus tard si le serveur prend.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, sur le site PAG",
+   "Oui, sur un site SimplePVP à part"
+  ]
+ },
+ {
+  "id": "S13",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Que montre la page web SimplePVP ?",
+  "aide": "Seulement si tu veux une page web.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Les classements — Top joueurs (à vie, et saison si choisie), triés par kills, K/D, etc. Simple et rapide à faire.",
+  "effort": "moyen",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Classements + fiche par joueur",
+   "Tout + serveur en direct"
+  ]
+ },
+ {
+  "id": "S14",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Côté Discord, où vit la communauté SimplePVP ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Nouveau Discord et nouveau bot — Tout séparé de la PAG. Plus propre, mais deux bots à maintenir sur le VPS et le pont Discord à dupliquer.",
+  "effort": "gros",
+  "note_tech": "2e bot Python sur le VPS, passerelle et commandes à dupliquer",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Nouveau Discord SimplePVP, même bot",
+   "Salons SimplePVP dans le Discord PAG"
+  ]
+ },
+ {
+  "id": "S15",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Qu'est-ce que le serveur publie tout seul sur Discord ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Manches + records + journal staff — Résultats de manche, records battus (plus long kill…) et, dans un salon staff à part, kicks, bans et alertes.",
+  "effort": "moyen",
+  "note_tech": "SRP_Discord gère déjà plusieurs salons (un webhook par salon)",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Le résultat de chaque manche",
+   "Un résumé par jour"
+  ]
+ },
+ {
+  "id": "S16",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Les joueurs peuvent-ils lier leur compte Discord à leur profil en jeu ?",
+  "aide": "SimpleRP le fait déjà avec /lier et un code donné par le bot.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non — Discord reste un endroit d'infos et de discussion ; aucune liaison, rien à gérer côté bot.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, comme sur SimpleRP",
+   "Oui, obligatoire pour le classement"
+  ]
+ },
+ {
+  "id": "S17",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Pour gérer le serveur en jeu (kick, ban, spectateur…), tu veux quoi ?",
+  "aide": "SimpleRP a un menu staff complet sur F10.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Menu F10 de SimpleRP adapté au PvP — On garde kick, ban, TP, spectateur, messages ; on retire le RP et on ajoute : changer de ville, finir la manche.",
+  "effort": "moyen",
+  "note_tech": "SRP_Admin (2 300 lignes) : on garde Joueurs et Serveur, on ajoute un onglet Manche",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Commandes dans le chat",
+   "Outils du jeu seulement"
+  ]
+ },
+ {
+  "id": "SN17",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Combien de niveaux de droits pour ton équipe de staff ?",
+  "aide": "Qui peut exclure, bannir, forcer une ville ou changer les réglages.",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Deux : modérateur et administrateur — Le modérateur exclut et coupe le micro ; l'admin bannit et change les réglages.",
+  "effort": "moyen",
+  "note_tech": "Le plus courant sur les serveurs publics.",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Un seul : tout le staff a tous les droits",
+   "Reprendre les rangs et droits de SimpleRP"
+  ]
+ },
+ {
+  "id": "S18",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Un joueur banni de SimpleRP est-il aussi banni de SimplePVP ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Non, listes séparées — Chaque serveur gère ses bannis. Un mauvais joueur RP peut très bien être un bon joueur PvP.",
+  "effort": "simple",
+  "note_tech": "SRP_Bans repris tel quel, avec son propre fichier de bannis",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Oui, liste commune",
+   "Seulement les bans graves"
+  ]
+ },
+ {
+  "id": "S19",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Contre quel abus le serveur doit-il se protéger tout seul en priorité ?",
+  "aide": "La triche par logiciel reste gérée par BattlEye ; ici on parle de ce que le mod peut repérer lui-même.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Rien d'automatique — Signalements des joueurs + staff. Aucune fausse alerte, mais il faut du monde pour surveiller.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Tirs suspects",
+   "Farm de stats entre amis"
+  ]
+ },
+ {
+  "id": "SN18",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Quand le serveur repère un tricheur probable, que fait-il tout seul ?",
+  "aide": "Seulement si une protection automatique contre les abus est choisie.",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Alerte au staff seulement — Message sur Discord avec le nom et ce qui a été repéré ; le staff décide.",
+  "effort": "simple",
+  "note_tech": "Aucun risque de punir un innocent.",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Exclusion + alerte au staff",
+   "Ban de 24 h + alerte au staff"
+  ]
+ },
+ {
+  "id": "S20",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Comment un joueur signale-t-il un tricheur ou un joueur toxique ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 0,
+  "decision": "Commande /signaler en jeu — /signaler <pseudo> envoie une alerte au staff sur Discord, avec les stats récentes du joueur visé.",
+  "effort": "simple",
+  "note_tech": "Commande de chat + envoi Discord, les deux déjà faits dans SimpleRP",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Salon Discord #signalements",
+   "Vote des joueurs"
+  ]
+ },
+ {
+  "id": "S21",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Comment présenter les règles et les infos du serveur (Discord, site) aux joueurs ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 1,
+  "decision": "Panneau au lobby + rappel par manche — Règles et liens affichés dans le lobby, et un message court dans le chat à chaque manche. Rien à accepter.",
+  "effort": "moyen",
+  "note_tech": "Panneau affiché à l'écran tant qu'on est dans le lobby",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Écran à accepter à la 1re connexion",
+   "Chat seulement + /regles"
+  ]
+ },
+ {
+  "id": "S22",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Quand le serveur doit-il redémarrer automatiquement ?",
+  "aide": "Des redémarrages réguliers évitent que le serveur ralentisse au fil des heures.",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Seulement à la main — Redémarrage pour les mises à jour ou si ça rame. Aucune coupure surprise, mais risque de ralentissements.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 1,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Chaque nuit à heure fixe",
+   "Toutes les 6 h, en fin de manche"
+  ]
+ },
+ {
+  "id": "S23",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "D'autres personnes peuvent-elles lancer leur propre serveur avec le mod SimplePVP ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Non, verrouillé par une clé — Le mod ne lance une partie que si le serveur a ta clé secrète. Les joueurs le téléchargent normalement.",
+  "effort": "simple",
+  "note_tech": "Un moddeur motivé peut contourner, mais ça bloque les copies faciles",
+  "precision": "",
+  "conseil": 2,
+  "suit_conseil": true,
+  "autres_choix": [
+   "Oui, mod libre",
+   "Oui, avec mention obligatoire"
+  ]
+ },
+ {
+  "id": "S24",
+  "theme": "Serveur, statistiques, communauté et lancement",
+  "question": "Comment tester SimplePVP avant l'ouverture au public ?",
+  "aide": "",
+  "type": "choix",
+  "choix_index": 2,
+  "decision": "Toi seul avec les IA, puis ouverture — Tu testes seul contre les bots, puis ouverture directe. Le plus rapide, mais les bugs à plusieurs passent inaperçus.",
+  "effort": "simple",
+  "note_tech": "",
+  "precision": "",
+  "conseil": 0,
+  "suit_conseil": false,
+  "autres_choix": [
+   "Soirées test avec la PAG",
+   "Bêta ouverte annoncée"
+  ]
+ }
+]
